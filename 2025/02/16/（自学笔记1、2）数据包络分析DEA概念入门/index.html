@@ -19,21 +19,23 @@
   <meta name="author" content="Wyn">
   <meta name="keywords" content="">
   
-    <meta name="description" content="2022年7月12日，王亚宁在地球上观察人类满24年，8388天。 感觉自己好久没有在半夜趴在床上打字了，好像总没有了之前那种写作的冲动，当然有一部分原因也是因为自己相比之前困惑少了许多，有些问题得到了解决，像太平盛世自然少了一些愤世嫉俗振聋发聩的伟大作品一样。从19年开始，每年生日我都会在晚上写一份给自己胡言乱语的文章，也都是以“在地球上观察人类”作为开头。而这一年我观察更多的可能是自己。 抉心">
+    <meta name="description" content="前提概念技术效率：指一个生产单元的生产过程达到该行业技术水平的程度，即一个生产单元技术水平的高低。技术效率可以从投入和产出两个角度进行衡量，在投入既定的情况下，技术效率由产出最大化程度衡量（产出导向型）；在产出既定的情况下，技术效率由投入最小化程度来衡量（投入导向型）。 技术效率可以通过产出&#x2F;投入的比值进行测量。即当生产过程中仅涉及一种产出和一种投入的时候，可以通过产出&#x2F;投入（">
 <meta property="og:type" content="article">
-<meta property="og:title" content="抉心自食 欲知本味">
-<meta property="og:url" content="http://example.com/2025/02/16/%E6%8A%89%E5%BF%83%E8%87%AA%E9%A3%9F-%E6%AC%B2%E7%9F%A5%E6%9C%AC%E5%91%B3/index.html">
+<meta property="og:title" content="（自学笔记1）数据包络分析DEA概念入门">
+<meta property="og:url" content="http://example.com/2025/02/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B01%E3%80%812%EF%BC%89%E6%95%B0%E6%8D%AE%E5%8C%85%E7%BB%9C%E5%88%86%E6%9E%90DEA%E6%A6%82%E5%BF%B5%E5%85%A5%E9%97%A8/index.html">
 <meta property="og:site_name" content="Wyn的窄门">
-<meta property="og:description" content="2022年7月12日，王亚宁在地球上观察人类满24年，8388天。 感觉自己好久没有在半夜趴在床上打字了，好像总没有了之前那种写作的冲动，当然有一部分原因也是因为自己相比之前困惑少了许多，有些问题得到了解决，像太平盛世自然少了一些愤世嫉俗振聋发聩的伟大作品一样。从19年开始，每年生日我都会在晚上写一份给自己胡言乱语的文章，也都是以“在地球上观察人类”作为开头。而这一年我观察更多的可能是自己。 抉心">
+<meta property="og:description" content="前提概念技术效率：指一个生产单元的生产过程达到该行业技术水平的程度，即一个生产单元技术水平的高低。技术效率可以从投入和产出两个角度进行衡量，在投入既定的情况下，技术效率由产出最大化程度衡量（产出导向型）；在产出既定的情况下，技术效率由投入最小化程度来衡量（投入导向型）。 技术效率可以通过产出&#x2F;投入的比值进行测量。即当生产过程中仅涉及一种产出和一种投入的时候，可以通过产出&#x2F;投入（">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-02-16T04:02:11.000Z">
-<meta property="article:modified_time" content="2025-02-16T04:03:03.870Z">
+<meta property="og:image" content="http://example.com/1.png">
+<meta property="article:published_time" content="2025-02-16T04:22:03.000Z">
+<meta property="article:modified_time" content="2025-02-16T04:43:48.264Z">
 <meta property="article:author" content="Wyn">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/1.png">
   
   
   
-  <title>抉心自食 欲知本味 - Wyn的窄门</title>
+  <title>（自学笔记1）数据包络分析DEA概念入门 - Wyn的窄门</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +205,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="抉心自食 欲知本味"></span>
+            <span id="subtitle" data-typed-text="（自学笔记1）数据包络分析DEA概念入门"></span>
           
         </div>
 
@@ -214,7 +216,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-02-16 12:02" pubdate>
+        <time datetime="2025-02-16 12:22" pubdate>
           2025年2月16日 中午
         </time>
       </span>
@@ -226,7 +228,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.5k 字
         
       </span>
     
@@ -237,7 +239,7 @@
         
         
         
-          10 分钟
+          13 分钟
         
       </span>
     
@@ -274,20 +276,59 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">抉心自食 欲知本味</h1>
+            <h1 id="seo-header">（自学笔记1）数据包络分析DEA概念入门</h1>
             
             
               <div class="markdown-body">
                 
-                <p>2022年7月12日，王亚宁在地球上观察人类满24年，8388天。</p>
-<p>感觉自己好久没有在半夜趴在床上打字了，好像总没有了之前那种写作的冲动，当然有一部分原因也是因为自己相比之前困惑少了许多，有些问题得到了解决，像太平盛世自然少了一些愤世嫉俗振聋发聩的伟大作品一样。从19年开始，每年生日我都会在晚上写一份给自己胡言乱语的文章，也都是以“在地球上观察人类”作为开头。而这一年我观察更多的可能是自己。</p>
-<p>抉心自食，欲知本味。</p>
-<p>思来想去，这一年也算是在人生中值得去记住的一年。</p>
-<p>我经历了一年的支教生活，将自己的身份由学生转变为劳动者，用这个词是因为看了未明子老师的视频，觉得用“劳动者”去抛开职业来泛指步入社会工作生存的人显得尊重和不油腻。而支教种种肉麻的话我也已经发表过，虽然肉麻但倒也没人逼迫我表达，而且那倒也是我心中所念所想。对完全意义上的我自己来讲，我能从中得到的最大感悟却是不要把希望寄托在他人身上，他人带给自己的无力感是自我努力改变不了的，而反之为了摆脱这种无力感，唯一能做的也就是要让自我强大。</p>
-<p>这一年应该才算自己真真正正地去锻炼，本科阶段更多的是小打小闹。而通过健身我才变得不那么焦躁，会愿意用很长一段时间，做一件成效很慢的事情，这对我来说真的很重要。正是这样的改变能让我很享受安静下来做一件事的感觉，读书，健身，写写东西，而不是浮躁地想迅速解决问题。也因为以上两点，我在研究生的三年决定把更多的时间留给自己，之前的独处现在想来颇有些矫揉造作、欲赋新词强说愁的意味，我希望自己在未来的三年能真正的享受这种感觉。</p>
-<p>这一年我开始意识到过度反思的危害性，这种过度反思带来的是行动上的滞后和更悲剧的空虚感，而之前的我往往如此把这种过度反思当成药品治疗我人格或精神上的病灶，可现实是陷入更深的混乱。就像之前读到过陈嘉映老师说过的：对我们个人来说，反思需要与天性的力量相结合，如果基于天性的孱弱而过渡的反思将会走向毁灭。而当我尝试着将行动，诸如读书运动学习与反思结合的时候，我发现其中的困惑会更容易消解，自我的修补会更加准确。其实这种道理想必大部分人都知道，而我却走了好大一圈弯路，着实有些遗憾。</p>
-<p>最后一部分还是得面对面对最让我手足无措的事情，虽然读书已经够让人伤脑筋，但至少知道自己在路上，磕磕绊绊摸爬滚打总能在这条路上找到容身之所，亦或者是跌下山崖，也知道自己能爬着上来。而此事当真是无根无枝无叶无果，自己虽知强求不来更不能急于一时，但又不知在何时何地，心情难免郁闷不堪。而且被骂过道貌岸然和虚伪，想想也真是魔幻和可笑，这一年在朋友的帮助和劝说下，自以为也有了些变化，也在尝试着正确看待这件事情，把它当作是属于自己人生一部分和应当去认真对待的一件事了。而如今这样，只能再搁置下去。</p>
-<p>写在最后，相比最开始写东西，总感觉自己的输出越来越少，或许是自怨自艾和自我废话的越来越少，抑或是熬不住夜，大脑疲惫的缘故吧，但自我是在以年为单位不断革新的。总之，还是要逼迫自己一些，不要迷失在过去和现在的种种，需要不断往前，在前方世界的某个角落，会有能完全领会我意思的人，即使没有，那我也可以让自己坚不可摧。</p>
+                <h2 id="前提概念"><a href="#前提概念" class="headerlink" title="前提概念"></a>前提概念</h2><p>技术效率：指一个生产单元的生产过程达到该行业技术水平的程度，即一个生产单元技术水平的高低。技术效率可以从投入和产出两个角度进行衡量，在投入既定的情况下，技术效率由产出最大化程度衡量（产出导向型）；在产出既定的情况下，技术效率由投入最小化程度来衡量（投入导向型）。</p>
+<p>技术效率可以通过产出&#x2F;投入的比值进行测量。即当生产过程中仅涉及一种产出和一种投入的时候，可以通过产出&#x2F;投入（每消耗一个单位的投入所生产的产品数量），反映各生产单元技术效率的高低。各单元产出&#x2F;投入的值除以所有单位中的最大值，就能得到标准化后的产出&#x2F;投入（在0-1范围内），从而更好地反映评价单元与其他单元之间的技术差距。</p>
+<p><img src="/1.png" srcset="/img/loading.gif" lazyload alt="投入产出示意"></p>
+<p>这种情况只涉及到单效率、单产出的情况。但现实的生产过程往往涉及多项投入和产出，因此可以通过对不同的投入和产出指标赋予一定的权重，然后计算出加权产出&#x2F;加权投入的比值，可以作为反映技术效率的指数。</p>
+<p>那么接下来要考虑如何确定权重？一种方式是通过主观评价，如：专家打分法等获得固定权重；另一种则是通过数据本身获得投入和产出的权重，DEA便是采用了这种方法。</p>
+<h2 id="DEA的方法说明和模型解释"><a href="#DEA的方法说明和模型解释" class="headerlink" title="DEA的方法说明和模型解释"></a>DEA的方法说明和模型解释</h2><p>DEA方法通过对决策单元（DecisionMaking Units,DMU），即同类型及条件下的“生产部门”投入与产出指标的评估，进行量化的效率值计算以及有效性评价。</p>
+<p>DEA的优势：能够对多输入多输出问题进行有效性评价，无需权重假设、无需数据量纲化、便于进行动态分析。</p>
+<p>DEA的模型：CCR、BCC、SBM、TFP等</p>
+<p>CCR模型由Charnes、Cooper和Rhodes于1978年提出，可以计算规模报酬不变（Constant return to scale，CRS）情况下的资源配置效率。BCC模型则是前两位加上Banker在1984年对CCR模型的拓展，即规模报酬可变（Variable return to scale，VRS）。</p>
+<blockquote>
+<p>【什么是规模报酬：规模报酬又叫规模收益，指在技术水平和要素价格不变的情况下，所有要素按照同一比例变动时，收入也同比例变动的情况。比如你的资本投入增加了100%，那么产量（收益）也会增加100%。大于100%则称为规模报酬递增，反之为规模报酬递减。】</p>
+</blockquote>
+<p>从这个角度上来说，CCR模型也可以叫做CRS径向DEA模型，BCC模型可以叫做VRS径向DEA模型。径向的含义指无效率的测量方式为投入能够等比例减少的程度或者产出能够等比例增加的程度。（这个概念不理解也无所谓）</p>
+<p>传统的CCR和BCC模型只能横向比较决策单元在同一时点的生产效率【截面数据】，而DEA-Malmquist指数模型可以测度决策单元在不同时期效率的动态变化，因此可以分析【面板数据】，更具广泛的应用性。</p>
+<p>前文提道DEA可根据投入或者产出既定分为投入导向型【不减少产出的条件下，达到技术有效时投入可以减少的程度】和产出导向型【在不增加投入的情况下，达到有效产出应该增加的程度】。在CRS径向中，二者的效率值是一样的，但在VRS径向中，二者效率值是不等的。</p>
+<p>CRS计算出的效率值叫做技术效率（TE，technical efficiency），其中包含了规模效率（SE，scale efficiency），并不是纯技术效率（PTE，pure technical efficiency）。VRS计算出来的才是纯技术效率，因此可以算出SE&#x3D;TE&#x2F;PTE</p>
+<h2 id="在软件中操作的名词说明"><a href="#在软件中操作的名词说明" class="headerlink" title="在软件中操作的名词说明"></a>在软件中操作的名词说明</h2><table>
+<thead>
+<tr>
+<th>技术效率</th>
+<th>技术进步</th>
+<th>纯技术进步</th>
+<th>规模效率</th>
+<th>全要素生产率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TECH</td>
+<td>TECHCH</td>
+<td>PECH</td>
+<td>SECH</td>
+<td>TFPCH</td>
+</tr>
+<tr>
+<td>反映对现有资源有效利用的能力，体现决策单元组织管理水平的变化</td>
+<td>测量技术效率的进步情况</td>
+<td>反映管理、制度体制等因素对生产率的影响</td>
+<td>反映现有规模与最优规模的差异</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>在规模报酬不变情况下：TFP是技术效率变动指数TECH和技术进步变动指数TECHCH的乘积</p>
+<p>在规模报酬可变情况下：TECH可分解为纯技术效率变动指数PECH和规模效率变动指数SECH的乘积。因此TFP&#x3D;PECH×SECH×TECHCH</p>
+<p>若TFP＞1，则表示从第t期到t+1期的全要素生产率提高，反之下降。PECH、SECH、TECHCH的解释同理，若有一项大于1，则表明该要素是全要素生产率增长的源泉，反之则导致了它的下降。</p>
+<h2 id="SBM超效率模型"><a href="#SBM超效率模型" class="headerlink" title="SBM超效率模型"></a>SBM超效率模型</h2><p>在DEA模型的结果中，通常会出现多个DMU被评价为有效的情况，DEA模型得出的效率值最大为1，有效DMU的效率值相同，这些有效DMU的效率高低无法进一步区分。为解决这一问题，Andersen和Petersen（1993）提出了对有效DMU区分其有效程度的方法，这种方法被称为“超效率”模型（super efficiency model），SBM便是超效率模型的一种。</p>
+<p>此外，DEA作为一种线性规划模型，其根本思想是用最小的投入获得最大产出，但生产系统中往往包含好产出和坏产出（期望产出和非期望产出），【假如两个国家使用相同的投入，获得了相同产出的GDP，但二者产生的污染不同，这就表明二者的效率不同】</p>
+<p>参考链接：<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1xY411D7ut/?spm_id_from=333.788.recommend_more_video.-1&amp;vd_source=f2f570aebd7fdba141e44deff4319c36">https://www.bilibili.com/video/BV1xY411D7ut/?spm_id_from=333.788.recommend_more_video.-1&amp;vd_source=f2f570aebd7fdba141e44deff4319c36</a></p>
+<p>发布于 2023-03-08 16:30</p>
 
                 
               </div>
@@ -306,7 +347,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%87%9D%E8%A7%86/" class="category-chain-item">凝视</a>
+  <a href="/categories/%E5%90%B8%E6%94%B6/" class="category-chain-item">吸收</a>
   
   
 
@@ -326,8 +367,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>抉心自食 欲知本味</div>
-      <div>http://example.com/2025/02/16/抉心自食-欲知本味/</div>
+      <div>（自学笔记1）数据包络分析DEA概念入门</div>
+      <div>http://example.com/2025/02/16/（自学笔记1、2）数据包络分析DEA概念入门/</div>
     </div>
     <div class="license-meta">
       
@@ -371,9 +412,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/02/16/%E6%B8%85%E6%99%B0%E7%9A%84%E5%9C%A8%E5%8F%98%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%82%A3%E5%B0%B1%E8%AE%A9%E6%A8%A1%E7%B3%8A%E7%9A%84%E6%9B%B4%E4%B8%BA%E6%B8%85%E6%99%B0/" title="清晰的在变模糊，那就让模糊的更为清晰">
+                      <a href="/2025/02/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B03%EF%BC%89%E9%97%A8%E6%A7%9B%E6%A8%A1%E5%9E%8B%E5%8E%9F%E7%90%86%E5%92%8Cstata%E5%AE%9E%E7%8E%B0/" title="（自学笔记3）门槛模型原理和stata实现">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">清晰的在变模糊，那就让模糊的更为清晰</span>
+                        <span class="hidden-mobile">（自学笔记3）门槛模型原理和stata实现</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -381,8 +422,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/02/16/keep-calm-and-carry-on/" title="keep calm and carry on">
-                        <span class="hidden-mobile">keep calm and carry on</span>
+                      <a href="/2025/02/16/%E9%A3%98%E3%80%81%E5%89%B2%E8%A3%82/" title="飘、割裂">
+                        <span class="hidden-mobile">飘、割裂</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

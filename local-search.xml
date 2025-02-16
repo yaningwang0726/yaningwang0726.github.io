@@ -4,6 +4,101 @@
   
   
   <entry>
+    <title>（自学笔记4）SSCI写作技巧与范例</title>
+    <link href="/2025/02/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B04%EF%BC%89SSCI%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A7%E4%B8%8E%E8%8C%83%E4%BE%8B/"/>
+    <url>/2025/02/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B04%EF%BC%89SSCI%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A7%E4%B8%8E%E8%8C%83%E4%BE%8B/</url>
+    
+    <content type="html"><![CDATA[<p>2025年2月16日的记录：现在看起来这个写的还是有的简陋了。等后续有时间重新整理一下关于写作的内容。</p><p>参考视频：<br><a href="http://link.zhihu.com/?target=https://www.bilibili.com/video/BV1Wg4y1K7cw/?spm_id_from=333.337.search-card.all.click&vd_source=f2f570aebd7fdba141e44deff4319c36">http://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1Wg4y1K7cw/%3Fspm_id_from%3D333.337.search-card.all.click%26vd_source%3Df2f570aebd7fdba141e44deff4319c36</a></p><h2 id="一、导论部分"><a href="#一、导论部分" class="headerlink" title="一、导论部分"></a>一、导论部分</h2><p>目的：回顾研究成果，引出现有研究空白；指出本文将如何应对上述研究空白；点名本研究的贡献和意义。</p><p>一般字数：以9000字英文论文为标准的话，导论部分一般不超过1000字，800字为宜。【个人感觉1000字为宜】</p><p>结构：以常见的经济学论文为例，基本上按照①提出（Y）的紧迫性，列举事实性证据；②提出X的现实背景并指出问题；③简要的研究现状和不足；④本文的研究创新和重要性；⑤余下的结构安排。</p><h2 id="二、研究背景部分"><a href="#二、研究背景部分" class="headerlink" title="二、研究背景部分"></a>二、研究背景部分</h2><p>实证背景部分的内容来源于本研究所关注主题的现有研究，提供“背景性”知识；提出研究空白；最后过度到理论部分。</p><h2 id="三、理论框架部分"><a href="#三、理论框架部分" class="headerlink" title="三、理论框架部分"></a>三、理论框架部分</h2><p>引领后续研究发现部分，为数据分析奠定基础。</p><p>不仅仅是一个高质量的文献综述，要搭建自己的理论框架。</p><p>【第二部分和第三部分感觉在看到的经济学文章中，更多的是分为文献综述和研究假说】</p><h2 id="四、研究设计部分-methodology（方法论）"><a href="#四、研究设计部分-methodology（方法论）" class="headerlink" title="四、研究设计部分 methodology（方法论）"></a>四、研究设计部分 methodology（方法论）</h2><p>再次表述本文的研究目的、研究方法和选取的原因。</p><p>（可以尝试把所有标题去除掉，重新审视论文的流畅性和连贯性）这点还是不错的idea。</p><h2 id="五、数据分析部分"><a href="#五、数据分析部分" class="headerlink" title="五、数据分析部分"></a>五、数据分析部分</h2><p>高度重视摘要、关键词、大标题</p><p>每一个节都需要标题，而且标题要体现出理论和实证的关注点</p><h2 id="六、结论部分"><a href="#六、结论部分" class="headerlink" title="六、结论部分"></a>六、结论部分</h2><p>研究发现、研究贡献、研究不足</p><p>【还应加一个政策建议】</p><p><img src="https://pic1.zhimg.com/80/v2-210ac3a98cfde73d8c07db64f5e44c46_720w.webp?source=d16d100b" alt="intro的写法结构"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>吸收</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>（自学笔记3）门槛模型原理和stata实现</title>
+    <link href="/2025/02/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B03%EF%BC%89%E9%97%A8%E6%A7%9B%E6%A8%A1%E5%9E%8B%E5%8E%9F%E7%90%86%E5%92%8Cstata%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2025/02/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B03%EF%BC%89%E9%97%A8%E6%A7%9B%E6%A8%A1%E5%9E%8B%E5%8E%9F%E7%90%86%E5%92%8Cstata%E5%AE%9E%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[<p>参考视频<br><a href="https://www.bilibili.com/video/BV1oA4y1d7Wy/?vd_source=f2f570aebd7fdba141e44deff4319c36">https://www.bilibili.com/video/BV1oA4y1d7Wy/?vd_source=f2f570aebd7fdba141e44deff4319c36</a></p><h2 id="门槛模型介绍"><a href="#门槛模型介绍" class="headerlink" title="门槛模型介绍"></a>门槛模型介绍</h2><p>以我们初中还是高中学的分段函数理解：Y与X并不一定是线性关系，有可能在不同阶段存在拐点，有不同的斜率。而门槛模型就是研究的变量之前的非线性关系。具体的定义为：门槛效应是指当一个经济参数达到特定的数值后，引起另外一个经济参数发生突然转向其他发展形式的现象（结构突变），作为转变的临界值就称为门槛值或者门限值。</p><p><img src="https://pica.zhimg.com/80/v2-b0ed6bb86db75edc0fc984a0baca89ff_720w.webp?source=d16d100b" alt="分段函数"></p><p>hansen（1999）首次介绍了具有个体效应的面板门槛模型的计量分析方法。该方法以残差平方和最小化为条件确定门槛值，并检验门槛值的显著性。</p><h2 id="计量模型"><a href="#计量模型" class="headerlink" title="计量模型"></a>计量模型</h2><p>常见的单门槛模型为：<br><img src="https://picx.zhimg.com/80/v2-7f1558dfa5da375cb8100fcc2d6b5fc1_720w.webp?source=d16d100b" alt="单门槛模型公式"></p><p>其中μ为常数项，β为系数，I(·)为示性函数，示性函数里面的q就是门槛变量，γ为门槛值。写成分段函数为：<br><img src="https://pica.zhimg.com/80/v2-a663323427e67e84d48bbe7e292842e3_720w.webp?source=d16d100b" alt="门槛模型分段函数表示"></p><p>值得注意的是，q既可以是核心解释变量，比如研究收入与学历的关系，假设当学历为硕士后，学历再增长所导致的收入变化可能会更高。q也可以是与被解释变量相关的变量，比如研究收入与学历的关系时，工作年限是一个同收入具有相关性的变量，当工作年限大于十年时，学历对收入的影响可能就没那么巨大了。（门槛值就是工作年限为10年）</p><h2 id="门槛值的确定"><a href="#门槛值的确定" class="headerlink" title="门槛值的确定"></a>门槛值的确定</h2><p>懒得打字了，stata会自动计算好。</p><p><img src="https://pica.zhimg.com/80/v2-713df7d7efcd5f6edc510f77a4d1701a_720w.webp?source=d16d100b" alt="计算过程1"></p><p>确定门槛值之后还要进行显著性检验，为了检验以门槛值划分的样本组其模型估计参数是否显著不同。<br><img src="https://picx.zhimg.com/80/v2-85e8a1988822071d9ff5068123a72eb8_720w.webp?source=d16d100b" alt="计算过程2"></p><p>LM统计量就是拉格朗日统计量，是检验模型中对于参数的约束是否合理，想具体了解可参照<br><a href="https://zhuanlan.zhihu.com/p/389052529">https://zhuanlan.zhihu.com/p/389052529</a></p><p>当确定变量存在门槛效应后，再进一步确定其置信区间（stata会进行操作）</p><h2 id="stata操作"><a href="#stata操作" class="headerlink" title="stata操作"></a>stata操作</h2><p>国内常用的面板门槛命令普遍采用王群勇和连玉君老师的命令。</p><p>连玉君老师：</p><p><code>xtthres y x ,thres(q) dthres(z) min(#) bs1(#) bs2(#) bs3(#)</code></p><p>其中y为被解释变量；x为解释变量（不受门槛变量影响的变量）；thres(q) q为门槛变量；<br>dthres（z）z为受到门槛变量影响的解释变量；min（#）指定在搜索每个区域中的最小观测数，默认值为10；bs1(#) bs2(#) bs3(#)分别在单阈值、双阈值和三阈值模型中自抽样次数，默认值都是300.</p><p> 王群勇老师：</p><p> <code>xthreg y x rx(var) qx(var) thnum(#) grid(#) trim(numlist) bs(numlist)</code></p><p>其中y为被解释变量；x为解释变量（不受门槛变量影响的变量）；rx（）是放入受到门槛变量影响的解释变量；qx（）是门槛变量；thnum（）是几个门槛值；trim（）是对门槛变量两端的值进行缩尾；grid（）是缩短运行时间，bs（）是自抽样估计量的值和标准误差（抽样次数）</p><h2 id="门槛模型画图命令"><a href="#门槛模型画图命令" class="headerlink" title="门槛模型画图命令"></a>门槛模型画图命令</h2><p><img src="https://pic1.zhimg.com/80/v2-eca01c0c1937e0d45f4f2dac09afed25_720w.webp?source=d16d100b" alt="画图代码"></p><h2 id="做门槛效应的步骤"><a href="#做门槛效应的步骤" class="headerlink" title="做门槛效应的步骤"></a>做门槛效应的步骤</h2><p>1.导入数据，定义面板数据 xtset id year</p><p>2.对变量进行单位根检验：用以检验变量的平稳性，如果序列中存在单位根过程不平稳，就会使回归分析中存在伪回归。如果数据平稳就是进行门槛模型检验，单位根检验的命令如下：<br><img src="https://picx.zhimg.com/80/v2-70b652930b3bc519cde31bc5e7bf6f03_720w.webp?source=d16d100b" alt="命令"></p><p>以Hansen1999的数据为例，i 为被解释变量，c1是核心解释变量（受门槛变量影响的解释变量），d1是门槛变量“q1 q2 q3 d1 qd1”为控制变量<br><img src="https://pica.zhimg.com/80/v2-8c61a275e8caf212e62f09dbb200b6f3_720w.webp?source=d16d100b" alt="结果展示"></p><p>通过看p-value判断是否符合显著性，p显著，数据是平稳的。然后执行门槛命令</p><p><code>xthreg i q1 q2 q3 d1 qd1, rx(c1) qx(d1) thrum(1) grid(400) trim(0.01) bs(3)</code>  &#x2F;&#x2F;&#x2F;单门槛检验 bs抽样次数可自行更改，一般300或者500都行</p><h2 id="结果解读：一般报告以下内容"><a href="#结果解读：一般报告以下内容" class="headerlink" title="结果解读：一般报告以下内容"></a>结果解读：一般报告以下内容</h2><h3 id="门槛值"><a href="#门槛值" class="headerlink" title="门槛值"></a>门槛值</h3><p><img src="https://picx.zhimg.com/80/v2-29d017d296eb911d2b1ed44eb2a9f82f_720w.webp?source=d16d100b" alt="结果1"></p><h3 id="门槛值的显著性水平"><a href="#门槛值的显著性水平" class="headerlink" title="门槛值的显著性水平"></a>门槛值的显著性水平</h3><p><img src="https://pica.zhimg.com/80/v2-f52c1c75d976857855ff87884810b735_720w.webp?source=d16d100b" alt="结果2"></p><h3 id="回归结果"><a href="#回归结果" class="headerlink" title="回归结果"></a>回归结果</h3><p><img src="https://picx.zhimg.com/80/v2-844b1b10f3017d8c99dfb709e65d992e_720w.webp?source=d16d100b" alt="结果3"></p><p>左侧小方块中的0表示小于门槛值的结果，1表示大于门槛值的结果</p><p>一般来说论文中不能用0和1，可以先用asdoc加门槛命令输出结果到word，然后改为</p><p>c1(d1≤0.015)</p><p>c1(d1＞0.015)</p><h3 id="画图"><a href="#画图" class="headerlink" title="画图"></a>画图</h3><p><img src="https://picx.zhimg.com/80/v2-4abf438cae5c88f5cec5404aecd96678_720w.webp?source=d16d100b" alt="结果4"></p><p>结果解读：看曲线是否有虚线以下的部分，如果有，说明通过了置信区间的检验</p><h3 id="双门槛检验"><a href="#双门槛检验" class="headerlink" title="双门槛检验"></a>双门槛检验</h3><p><code>xthreg i q1 q2 q3 di qd1, rx(c1) qx(d1) thnum(2) grid(400) trim(0.01 0.01) bs(3 3)</code></p><p>双门槛就是在单门槛命令的基础上，写两个缩尾，两个抽样次数</p><p><img src="https://pic1.zhimg.com/80/v2-5f19470d0d3d3cca089cb45e215d95ae_720w.webp?source=d16d100b" alt="结果5"><br><img src="https://picx.zhimg.com/80/v2-d1e6f20c028f23b9cca642a01a16bcee_720w.webp?source=d16d100b" alt="结果6"></p><p>结果解释和画图参考单门槛</p><p><img src="https://picx.zhimg.com/80/v2-10aeccbebadd6bea4d6d92e29ae69cf4_720w.webp?source=d16d100b" alt="结果7"></p><p>可以看到一个门槛值是0.0154，另一个门槛值是0.5418</p><p>三门槛同理，注意门槛值的顺序要按照大小排列。</p><p>发布于 2023-03-28 18:51</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>吸收</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>（自学笔记1）数据包络分析DEA概念入门</title>
+    <link href="/2025/02/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B01%E3%80%812%EF%BC%89%E6%95%B0%E6%8D%AE%E5%8C%85%E7%BB%9C%E5%88%86%E6%9E%90DEA%E6%A6%82%E5%BF%B5%E5%85%A5%E9%97%A8/"/>
+    <url>/2025/02/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B01%E3%80%812%EF%BC%89%E6%95%B0%E6%8D%AE%E5%8C%85%E7%BB%9C%E5%88%86%E6%9E%90DEA%E6%A6%82%E5%BF%B5%E5%85%A5%E9%97%A8/</url>
+    
+    <content type="html"><![CDATA[<h2 id="前提概念"><a href="#前提概念" class="headerlink" title="前提概念"></a>前提概念</h2><p>技术效率：指一个生产单元的生产过程达到该行业技术水平的程度，即一个生产单元技术水平的高低。技术效率可以从投入和产出两个角度进行衡量，在投入既定的情况下，技术效率由产出最大化程度衡量（产出导向型）；在产出既定的情况下，技术效率由投入最小化程度来衡量（投入导向型）。</p><p>技术效率可以通过产出&#x2F;投入的比值进行测量。即当生产过程中仅涉及一种产出和一种投入的时候，可以通过产出&#x2F;投入（每消耗一个单位的投入所生产的产品数量），反映各生产单元技术效率的高低。各单元产出&#x2F;投入的值除以所有单位中的最大值，就能得到标准化后的产出&#x2F;投入（在0-1范围内），从而更好地反映评价单元与其他单元之间的技术差距。</p><p><img src="/1.png" alt="投入产出示意"></p><p>这种情况只涉及到单效率、单产出的情况。但现实的生产过程往往涉及多项投入和产出，因此可以通过对不同的投入和产出指标赋予一定的权重，然后计算出加权产出&#x2F;加权投入的比值，可以作为反映技术效率的指数。</p><p>那么接下来要考虑如何确定权重？一种方式是通过主观评价，如：专家打分法等获得固定权重；另一种则是通过数据本身获得投入和产出的权重，DEA便是采用了这种方法。</p><h2 id="DEA的方法说明和模型解释"><a href="#DEA的方法说明和模型解释" class="headerlink" title="DEA的方法说明和模型解释"></a>DEA的方法说明和模型解释</h2><p>DEA方法通过对决策单元（DecisionMaking Units,DMU），即同类型及条件下的“生产部门”投入与产出指标的评估，进行量化的效率值计算以及有效性评价。</p><p>DEA的优势：能够对多输入多输出问题进行有效性评价，无需权重假设、无需数据量纲化、便于进行动态分析。</p><p>DEA的模型：CCR、BCC、SBM、TFP等</p><p>CCR模型由Charnes、Cooper和Rhodes于1978年提出，可以计算规模报酬不变（Constant return to scale，CRS）情况下的资源配置效率。BCC模型则是前两位加上Banker在1984年对CCR模型的拓展，即规模报酬可变（Variable return to scale，VRS）。</p><blockquote><p>【什么是规模报酬：规模报酬又叫规模收益，指在技术水平和要素价格不变的情况下，所有要素按照同一比例变动时，收入也同比例变动的情况。比如你的资本投入增加了100%，那么产量（收益）也会增加100%。大于100%则称为规模报酬递增，反之为规模报酬递减。】</p></blockquote><p>从这个角度上来说，CCR模型也可以叫做CRS径向DEA模型，BCC模型可以叫做VRS径向DEA模型。径向的含义指无效率的测量方式为投入能够等比例减少的程度或者产出能够等比例增加的程度。（这个概念不理解也无所谓）</p><p>传统的CCR和BCC模型只能横向比较决策单元在同一时点的生产效率【截面数据】，而DEA-Malmquist指数模型可以测度决策单元在不同时期效率的动态变化，因此可以分析【面板数据】，更具广泛的应用性。</p><p>前文提道DEA可根据投入或者产出既定分为投入导向型【不减少产出的条件下，达到技术有效时投入可以减少的程度】和产出导向型【在不增加投入的情况下，达到有效产出应该增加的程度】。在CRS径向中，二者的效率值是一样的，但在VRS径向中，二者效率值是不等的。</p><p>CRS计算出的效率值叫做技术效率（TE，technical efficiency），其中包含了规模效率（SE，scale efficiency），并不是纯技术效率（PTE，pure technical efficiency）。VRS计算出来的才是纯技术效率，因此可以算出SE&#x3D;TE&#x2F;PTE</p><h2 id="在软件中操作的名词说明"><a href="#在软件中操作的名词说明" class="headerlink" title="在软件中操作的名词说明"></a>在软件中操作的名词说明</h2><table><thead><tr><th>技术效率</th><th>技术进步</th><th>纯技术进步</th><th>规模效率</th><th>全要素生产率</th></tr></thead><tbody><tr><td>TECH</td><td>TECHCH</td><td>PECH</td><td>SECH</td><td>TFPCH</td></tr><tr><td>反映对现有资源有效利用的能力，体现决策单元组织管理水平的变化</td><td>测量技术效率的进步情况</td><td>反映管理、制度体制等因素对生产率的影响</td><td>反映现有规模与最优规模的差异</td><td></td></tr></tbody></table><p>在规模报酬不变情况下：TFP是技术效率变动指数TECH和技术进步变动指数TECHCH的乘积</p><p>在规模报酬可变情况下：TECH可分解为纯技术效率变动指数PECH和规模效率变动指数SECH的乘积。因此TFP&#x3D;PECH×SECH×TECHCH</p><p>若TFP＞1，则表示从第t期到t+1期的全要素生产率提高，反之下降。PECH、SECH、TECHCH的解释同理，若有一项大于1，则表明该要素是全要素生产率增长的源泉，反之则导致了它的下降。</p><h2 id="SBM超效率模型"><a href="#SBM超效率模型" class="headerlink" title="SBM超效率模型"></a>SBM超效率模型</h2><p>在DEA模型的结果中，通常会出现多个DMU被评价为有效的情况，DEA模型得出的效率值最大为1，有效DMU的效率值相同，这些有效DMU的效率高低无法进一步区分。为解决这一问题，Andersen和Petersen（1993）提出了对有效DMU区分其有效程度的方法，这种方法被称为“超效率”模型（super efficiency model），SBM便是超效率模型的一种。</p><p>此外，DEA作为一种线性规划模型，其根本思想是用最小的投入获得最大产出，但生产系统中往往包含好产出和坏产出（期望产出和非期望产出），【假如两个国家使用相同的投入，获得了相同产出的GDP，但二者产生的污染不同，这就表明二者的效率不同】</p><p>参考链接：<br><a href="https://www.bilibili.com/video/BV1xY411D7ut/?spm_id_from=333.788.recommend_more_video.-1&amp;vd_source=f2f570aebd7fdba141e44deff4319c36">https://www.bilibili.com/video/BV1xY411D7ut/?spm_id_from=333.788.recommend_more_video.-1&amp;vd_source=f2f570aebd7fdba141e44deff4319c36</a></p><p>发布于 2023-03-08 16:30</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>吸收</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>飘、割裂</title>
+    <link href="/2025/02/16/%E9%A3%98%E3%80%81%E5%89%B2%E8%A3%82/"/>
+    <url>/2025/02/16/%E9%A3%98%E3%80%81%E5%89%B2%E8%A3%82/</url>
+    
+    <content type="html"><![CDATA[<p>2024年7月18日，wyn在地球上观察人类满26年，9125天。</p><p>我因为要见导师来了北京，在一间青旅住了下来，屋子上下两层一共住了10个人，大家各有聚集到此处的缘由，也各有各的忧愁吧。因为旁边人打电话断断续续能听到些“3000块”“有空调和床能住就行”“一天才100”等话语。好在每张床位都是独立的隔间，让我能有一些隐私的空间码字。我每年的生日都想着do something special，今年应该是相当特殊的一次了，我第一次隐约体会到了北漂的感觉，只身一人来到北京，找个凑活的地方住下，点个凑活的外卖，出门走了走但充满了“这里看起来不错，但不属于我”的疏远感。</p><p>这段时间的日子并不好过，一直在给现在的老师做项目，没什么时间做自己想做的事情，刚刚好又一连两天收到了两篇文章拒稿的消息，加之处于申博的关键阶段，更加重了我的焦虑。这段时间发了几十封邮件基本都石沉大海，再一次感觉到深深的无可奈何，自己不够优秀，也不够有关系，却偏偏还做着一些不切实际的梦。还不容易有了一点点点点希望，所以想试一试，尽管渺茫，总比完全没有希望来的要好。</p><p>今年以来最大的感受是，一种前所未有的割裂感，在一个万分繁荣的宏大叙事下，我目光所见却都是一个又一个具体的个体的困顿和迷茫。这一个个困顿迷茫的个体中，有一个就是我。我当然提出了似乎能让自己满意解决方案，但这种解决方案也存在着我能实现现阶段目标的前提。在没能达到自己目标的情况下，我想我很难心甘情愿。我身边存在着两种截然不同的声音，一种告诉我大可放心，前途一片光明，不要焦虑担心，仿佛未来唾手可得；另一种告诉我认清现实，社会就是纯粹的达尔文主义，太多人找不到工作。我常常夹在这两种声音中不知所措，但其实觉得自己也并非难以立足，只不过梦想和现实隔着好大好大好大一段距离，可能我也无法去填补，我不甘脱下长衫，也不愿把长衫裹紧。</p><p>我不知还能走多远，更不知道前面有多长的路在等着我，能做的只能是，用双手搬着沉重的快要无法移动的腿，左、右、左、右的往前迈。不过总归是特殊的日子，那就许个愿希望明天有好消息传来。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>凝视</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>清晰的在变模糊，那就让模糊的更为清晰</title>
+    <link href="/2025/02/16/%E6%B8%85%E6%99%B0%E7%9A%84%E5%9C%A8%E5%8F%98%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%82%A3%E5%B0%B1%E8%AE%A9%E6%A8%A1%E7%B3%8A%E7%9A%84%E6%9B%B4%E4%B8%BA%E6%B8%85%E6%99%B0/"/>
+    <url>/2025/02/16/%E6%B8%85%E6%99%B0%E7%9A%84%E5%9C%A8%E5%8F%98%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%82%A3%E5%B0%B1%E8%AE%A9%E6%A8%A1%E7%B3%8A%E7%9A%84%E6%9B%B4%E4%B8%BA%E6%B8%85%E6%99%B0/</url>
+    
+    <content type="html"><![CDATA[<p>2023年7月31日，WYN在地球上观察人类满25年，8772天。</p><p>每一年文章的开头都是上面这句话，是因为我之前总是觉得，我在以旁观者的姿态看待周遭发生的事情，看待周围经过的人。但今年似乎变了，当我敲下“观察人类满25年”这句话时，我才意识到，我这一年观察更多的是我自己。这并不意味着以往没有，而是以往我通过观察外在攫取营养于自身，如今以自我吸收的方式发生变化。</p><p>这一年中，我认识世界的方式变得单调，生活充实且乏味。我甚至有明显的感觉，自己在融入一套规则而被影响。我不知道这是好是坏，我甚至开始无法分辨更多事的是好是坏，即使以往的判断也不一定正确，但我现在也确确实实变模糊了一些。</p><p>以往也许清晰的变模糊，以往确实模糊的变清晰。这或许也是一件好事。</p><p>就像上一年写的那样，我把更多的时间留给了自己，这是模糊与清晰变化的根源，同样也是生活充实且单调的根源。这并非不好，只是我从三维弹球变成了一款射击游戏。而这一年，以及未来几年，是为代价罢了，我愿意且也不得不付出这样的代价。</p><p>我一方面并不在乎蛋糕、礼物、聚会之类的事情，另一方面其实内在也是个重视仪式感的人。所以一年中的这一天应该去do something special。嗯，所以我在短暂加了个班写完我的第三篇论文后，选择了在办公室留一些时间给自己的精神碎片。</p><p>真的，这一年单调到无法看到自己的思想变化，但其实应该是单调的充实让自己没有思考，这也是我这一年最最最可惜的事。如今，只是愈发觉得时间宝贵，甚至想把满25年当作24年的实岁来算。</p><p>写在最后，以黄庭坚的诗作结尾。“青衫乌帽芦花鞭，送君归去明主前。若问旧时黄庭坚，谪在人间今八年。”</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>凝视</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>抉心自食 欲知本味</title>
     <link href="/2025/02/16/%E6%8A%89%E5%BF%83%E8%87%AA%E9%A3%9F-%E6%AC%B2%E7%9F%A5%E6%9C%AC%E5%91%B3/"/>
     <url>/2025/02/16/%E6%8A%89%E5%BF%83%E8%87%AA%E9%A3%9F-%E6%AC%B2%E7%9F%A5%E6%9C%AC%E5%91%B3/</url>

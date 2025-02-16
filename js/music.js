@@ -10,10 +10,10 @@ const ap = new APlayer({
         cover: 'https://p1.music.126.net/AKwTdOfUFg7pBtUSyB9z-w==/109951164524519969.jpg?param=34y34',
     }, 
     {
-        name: '杜鹃',
-        artist: '李佳隆',
-        url: 'http://music.163.com/song/media/outer/url?id=2064487982.mp3',
-        cover: 'https://p1.music.126.net/PhBNYTX3FDNoVmONk6W28w==/109951168743738121.jpg?param=130y130',
+        name: '喜鹊',
+        artist: 'Capper / LEGGO',
+        url: 'http://music.163.com/song/media/outer/url?id=2610629046.mp3',
+        cover: 'https://p2.music.126.net/GX6tMnRMfobKiy3NJrD4og==/109951169846410884.jpg?param=130y130',
     }, 
 	]
 });

@@ -19,12 +19,12 @@
   <meta name="author" content="Wyn">
   <meta name="keywords" content="">
   
-    <meta name="description" content="参考视频https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1oA4y1d7Wy&#x2F;?vd_source&#x3D;f2f570aebd7fdba141e44deff4319c36 门槛模型介绍以我们初中还是高中学的分段函数理解：Y与X并不一定是线性关系，有可能在不同阶段存在拐点，有不同的斜率。而门槛模型就是研究的变量之前的非线性关系。具体的定义为：门槛效应是指当一个经济参数达到特定的数值后，引">
+    <meta name="description" content="参考视频 https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1oA4y1d7Wy&#x2F;?vd_source&#x3D;f2f570aebd7fdba141e44deff4319c36  门槛模型介绍 以我们初中还是高中学的分段函数理解：Y与X并不一定是线性关系，有可能在不同阶段存在拐点，有不同的斜率。而门槛模型就是研究的变量之前的非线性关系。具体的定义为：门槛效应是指当一个经济参数达到特定的数值">
 <meta property="og:type" content="article">
 <meta property="og:title" content="（自学笔记3）门槛模型原理和stata实现">
 <meta property="og:url" content="http://example.com/2025/02/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B03%EF%BC%89%E9%97%A8%E6%A7%9B%E6%A8%A1%E5%9E%8B%E5%8E%9F%E7%90%86%E5%92%8Cstata%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="Wyn的窄门">
-<meta property="og:description" content="参考视频https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1oA4y1d7Wy&#x2F;?vd_source&#x3D;f2f570aebd7fdba141e44deff4319c36 门槛模型介绍以我们初中还是高中学的分段函数理解：Y与X并不一定是线性关系，有可能在不同阶段存在拐点，有不同的斜率。而门槛模型就是研究的变量之前的非线性关系。具体的定义为：门槛效应是指当一个经济参数达到特定的数值后，引">
+<meta property="og:description" content="参考视频 https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1oA4y1d7Wy&#x2F;?vd_source&#x3D;f2f570aebd7fdba141e44deff4319c36  门槛模型介绍 以我们初中还是高中学的分段函数理解：Y与X并不一定是线性关系，有可能在不同阶段存在拐点，有不同的斜率。而门槛模型就是研究的变量之前的非线性关系。具体的定义为：门槛效应是指当一个经济参数达到特定的数值">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://pica.zhimg.com/80/v2-b0ed6bb86db75edc0fc984a0baca89ff_720w.webp?source=d16d100b">
 <meta property="og:image" content="https://picx.zhimg.com/80/v2-7f1558dfa5da375cb8100fcc2d6b5fc1_720w.webp?source=d16d100b">
@@ -104,7 +104,11 @@
 
 
   
-<meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
 
 
 <body>
@@ -295,45 +299,66 @@
             
               <div class="markdown-body">
                 
-                <p>参考视频<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1oA4y1d7Wy/?vd_source=f2f570aebd7fdba141e44deff4319c36">https://www.bilibili.com/video/BV1oA4y1d7Wy/?vd_source=f2f570aebd7fdba141e44deff4319c36</a></p>
-<h2 id="门槛模型介绍"><a href="#门槛模型介绍" class="headerlink" title="门槛模型介绍"></a>门槛模型介绍</h2><p>以我们初中还是高中学的分段函数理解：Y与X并不一定是线性关系，有可能在不同阶段存在拐点，有不同的斜率。而门槛模型就是研究的变量之前的非线性关系。具体的定义为：门槛效应是指当一个经济参数达到特定的数值后，引起另外一个经济参数发生突然转向其他发展形式的现象（结构突变），作为转变的临界值就称为门槛值或者门限值。</p>
-<p><img src="https://pica.zhimg.com/80/v2-b0ed6bb86db75edc0fc984a0baca89ff_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="分段函数"></p>
+                <p>参考视频<br />
+<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1oA4y1d7Wy/?vd_source=f2f570aebd7fdba141e44deff4319c36">https://www.bilibili.com/video/BV1oA4y1d7Wy/?vd_source=f2f570aebd7fdba141e44deff4319c36</a></p>
+<h2 id="门槛模型介绍"><a class="markdownIt-Anchor" href="#门槛模型介绍"></a> 门槛模型介绍</h2>
+<p>以我们初中还是高中学的分段函数理解：Y与X并不一定是线性关系，有可能在不同阶段存在拐点，有不同的斜率。而门槛模型就是研究的变量之前的非线性关系。具体的定义为：门槛效应是指当一个经济参数达到特定的数值后，引起另外一个经济参数发生突然转向其他发展形式的现象（结构突变），作为转变的临界值就称为门槛值或者门限值。</p>
+<p><img src="https://pica.zhimg.com/80/v2-b0ed6bb86db75edc0fc984a0baca89ff_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="分段函数" /></p>
 <p>hansen（1999）首次介绍了具有个体效应的面板门槛模型的计量分析方法。该方法以残差平方和最小化为条件确定门槛值，并检验门槛值的显著性。</p>
-<h2 id="计量模型"><a href="#计量模型" class="headerlink" title="计量模型"></a>计量模型</h2><p>常见的单门槛模型为：<br><img src="https://picx.zhimg.com/80/v2-7f1558dfa5da375cb8100fcc2d6b5fc1_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="单门槛模型公式"></p>
-<p>其中μ为常数项，β为系数，I(·)为示性函数，示性函数里面的q就是门槛变量，γ为门槛值。写成分段函数为：<br><img src="https://pica.zhimg.com/80/v2-a663323427e67e84d48bbe7e292842e3_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="门槛模型分段函数表示"></p>
+<h2 id="计量模型"><a class="markdownIt-Anchor" href="#计量模型"></a> 计量模型</h2>
+<p>常见的单门槛模型为：<br />
+<img src="https://picx.zhimg.com/80/v2-7f1558dfa5da375cb8100fcc2d6b5fc1_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="单门槛模型公式" /></p>
+<p>其中μ为常数项，β为系数，I(·)为示性函数，示性函数里面的q就是门槛变量，γ为门槛值。写成分段函数为：<br />
+<img src="https://pica.zhimg.com/80/v2-a663323427e67e84d48bbe7e292842e3_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="门槛模型分段函数表示" /></p>
 <p>值得注意的是，q既可以是核心解释变量，比如研究收入与学历的关系，假设当学历为硕士后，学历再增长所导致的收入变化可能会更高。q也可以是与被解释变量相关的变量，比如研究收入与学历的关系时，工作年限是一个同收入具有相关性的变量，当工作年限大于十年时，学历对收入的影响可能就没那么巨大了。（门槛值就是工作年限为10年）</p>
-<h2 id="门槛值的确定"><a href="#门槛值的确定" class="headerlink" title="门槛值的确定"></a>门槛值的确定</h2><p>懒得打字了，stata会自动计算好。</p>
-<p><img src="https://pica.zhimg.com/80/v2-713df7d7efcd5f6edc510f77a4d1701a_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="计算过程1"></p>
-<p>确定门槛值之后还要进行显著性检验，为了检验以门槛值划分的样本组其模型估计参数是否显著不同。<br><img src="https://picx.zhimg.com/80/v2-85e8a1988822071d9ff5068123a72eb8_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="计算过程2"></p>
-<p>LM统计量就是拉格朗日统计量，是检验模型中对于参数的约束是否合理，想具体了解可参照<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/389052529">https://zhuanlan.zhihu.com/p/389052529</a></p>
+<h2 id="门槛值的确定"><a class="markdownIt-Anchor" href="#门槛值的确定"></a> 门槛值的确定</h2>
+<p>懒得打字了，stata会自动计算好。</p>
+<p><img src="https://pica.zhimg.com/80/v2-713df7d7efcd5f6edc510f77a4d1701a_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="计算过程1" /></p>
+<p>确定门槛值之后还要进行显著性检验，为了检验以门槛值划分的样本组其模型估计参数是否显著不同。<br />
+<img src="https://picx.zhimg.com/80/v2-85e8a1988822071d9ff5068123a72eb8_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="计算过程2" /></p>
+<p>LM统计量就是拉格朗日统计量，是检验模型中对于参数的约束是否合理，想具体了解可参照<br />
+<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/389052529">https://zhuanlan.zhihu.com/p/389052529</a></p>
 <p>当确定变量存在门槛效应后，再进一步确定其置信区间（stata会进行操作）</p>
-<h2 id="stata操作"><a href="#stata操作" class="headerlink" title="stata操作"></a>stata操作</h2><p>国内常用的面板门槛命令普遍采用王群勇和连玉君老师的命令。</p>
+<h2 id="stata操作"><a class="markdownIt-Anchor" href="#stata操作"></a> stata操作</h2>
+<p>国内常用的面板门槛命令普遍采用王群勇和连玉君老师的命令。</p>
 <p>连玉君老师：</p>
 <p><code>xtthres y x ,thres(q) dthres(z) min(#) bs1(#) bs2(#) bs3(#)</code></p>
-<p>其中y为被解释变量；x为解释变量（不受门槛变量影响的变量）；thres(q) q为门槛变量；<br>dthres（z）z为受到门槛变量影响的解释变量；min（#）指定在搜索每个区域中的最小观测数，默认值为10；bs1(#) bs2(#) bs3(#)分别在单阈值、双阈值和三阈值模型中自抽样次数，默认值都是300.</p>
-<p> 王群勇老师：</p>
-<p> <code>xthreg y x rx(var) qx(var) thnum(#) grid(#) trim(numlist) bs(numlist)</code></p>
+<p>其中y为被解释变量；x为解释变量（不受门槛变量影响的变量）；thres(q) q为门槛变量；<br />
+dthres（z）z为受到门槛变量影响的解释变量；min（#）指定在搜索每个区域中的最小观测数，默认值为10；bs1(#) bs2(#) bs3(#)分别在单阈值、双阈值和三阈值模型中自抽样次数，默认值都是300.</p>
+<p>王群勇老师：</p>
+<p><code>xthreg y x rx(var) qx(var) thnum(#) grid(#) trim(numlist) bs(numlist)</code></p>
 <p>其中y为被解释变量；x为解释变量（不受门槛变量影响的变量）；rx（）是放入受到门槛变量影响的解释变量；qx（）是门槛变量；thnum（）是几个门槛值；trim（）是对门槛变量两端的值进行缩尾；grid（）是缩短运行时间，bs（）是自抽样估计量的值和标准误差（抽样次数）</p>
-<h2 id="门槛模型画图命令"><a href="#门槛模型画图命令" class="headerlink" title="门槛模型画图命令"></a>门槛模型画图命令</h2><p><img src="https://pic1.zhimg.com/80/v2-eca01c0c1937e0d45f4f2dac09afed25_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="画图代码"></p>
-<h2 id="做门槛效应的步骤"><a href="#做门槛效应的步骤" class="headerlink" title="做门槛效应的步骤"></a>做门槛效应的步骤</h2><p>1.导入数据，定义面板数据 xtset id year</p>
-<p>2.对变量进行单位根检验：用以检验变量的平稳性，如果序列中存在单位根过程不平稳，就会使回归分析中存在伪回归。如果数据平稳就是进行门槛模型检验，单位根检验的命令如下：<br><img src="https://picx.zhimg.com/80/v2-70b652930b3bc519cde31bc5e7bf6f03_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="命令"></p>
-<p>以Hansen1999的数据为例，i 为被解释变量，c1是核心解释变量（受门槛变量影响的解释变量），d1是门槛变量“q1 q2 q3 d1 qd1”为控制变量<br><img src="https://pica.zhimg.com/80/v2-8c61a275e8caf212e62f09dbb200b6f3_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果展示"></p>
+<h2 id="门槛模型画图命令"><a class="markdownIt-Anchor" href="#门槛模型画图命令"></a> 门槛模型画图命令</h2>
+<p><img src="https://pic1.zhimg.com/80/v2-eca01c0c1937e0d45f4f2dac09afed25_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="画图代码" /></p>
+<h2 id="做门槛效应的步骤"><a class="markdownIt-Anchor" href="#做门槛效应的步骤"></a> 做门槛效应的步骤</h2>
+<p>1.导入数据，定义面板数据 xtset id year</p>
+<p>2.对变量进行单位根检验：用以检验变量的平稳性，如果序列中存在单位根过程不平稳，就会使回归分析中存在伪回归。如果数据平稳就是进行门槛模型检验，单位根检验的命令如下：<br />
+<img src="https://picx.zhimg.com/80/v2-70b652930b3bc519cde31bc5e7bf6f03_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="命令" /></p>
+<p>以Hansen1999的数据为例，i 为被解释变量，c1是核心解释变量（受门槛变量影响的解释变量），d1是门槛变量“q1 q2 q3 d1 qd1”为控制变量<br />
+<img src="https://pica.zhimg.com/80/v2-8c61a275e8caf212e62f09dbb200b6f3_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果展示" /></p>
 <p>通过看p-value判断是否符合显著性，p显著，数据是平稳的。然后执行门槛命令</p>
 <p><code>xthreg i q1 q2 q3 d1 qd1, rx(c1) qx(d1) thrum(1) grid(400) trim(0.01) bs(3)</code>  ///单门槛检验 bs抽样次数可自行更改，一般300或者500都行</p>
-<h2 id="结果解读：一般报告以下内容"><a href="#结果解读：一般报告以下内容" class="headerlink" title="结果解读：一般报告以下内容"></a>结果解读：一般报告以下内容</h2><h3 id="门槛值"><a href="#门槛值" class="headerlink" title="门槛值"></a>门槛值</h3><p><img src="https://picx.zhimg.com/80/v2-29d017d296eb911d2b1ed44eb2a9f82f_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果1"></p>
-<h3 id="门槛值的显著性水平"><a href="#门槛值的显著性水平" class="headerlink" title="门槛值的显著性水平"></a>门槛值的显著性水平</h3><p><img src="https://pica.zhimg.com/80/v2-f52c1c75d976857855ff87884810b735_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果2"></p>
-<h3 id="回归结果"><a href="#回归结果" class="headerlink" title="回归结果"></a>回归结果</h3><p><img src="https://picx.zhimg.com/80/v2-844b1b10f3017d8c99dfb709e65d992e_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果3"></p>
+<h2 id="结果解读一般报告以下内容"><a class="markdownIt-Anchor" href="#结果解读一般报告以下内容"></a> 结果解读：一般报告以下内容</h2>
+<h3 id="门槛值"><a class="markdownIt-Anchor" href="#门槛值"></a> 门槛值</h3>
+<p><img src="https://picx.zhimg.com/80/v2-29d017d296eb911d2b1ed44eb2a9f82f_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果1" /></p>
+<h3 id="门槛值的显著性水平"><a class="markdownIt-Anchor" href="#门槛值的显著性水平"></a> 门槛值的显著性水平</h3>
+<p><img src="https://pica.zhimg.com/80/v2-f52c1c75d976857855ff87884810b735_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果2" /></p>
+<h3 id="回归结果"><a class="markdownIt-Anchor" href="#回归结果"></a> 回归结果</h3>
+<p><img src="https://picx.zhimg.com/80/v2-844b1b10f3017d8c99dfb709e65d992e_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果3" /></p>
 <p>左侧小方块中的0表示小于门槛值的结果，1表示大于门槛值的结果</p>
 <p>一般来说论文中不能用0和1，可以先用asdoc加门槛命令输出结果到word，然后改为</p>
 <p>c1(d1≤0.015)</p>
 <p>c1(d1＞0.015)</p>
-<h3 id="画图"><a href="#画图" class="headerlink" title="画图"></a>画图</h3><p><img src="https://picx.zhimg.com/80/v2-4abf438cae5c88f5cec5404aecd96678_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果4"></p>
+<h3 id="画图"><a class="markdownIt-Anchor" href="#画图"></a> 画图</h3>
+<p><img src="https://picx.zhimg.com/80/v2-4abf438cae5c88f5cec5404aecd96678_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果4" /></p>
 <p>结果解读：看曲线是否有虚线以下的部分，如果有，说明通过了置信区间的检验</p>
-<h3 id="双门槛检验"><a href="#双门槛检验" class="headerlink" title="双门槛检验"></a>双门槛检验</h3><p><code>xthreg i q1 q2 q3 di qd1, rx(c1) qx(d1) thnum(2) grid(400) trim(0.01 0.01) bs(3 3)</code></p>
+<h3 id="双门槛检验"><a class="markdownIt-Anchor" href="#双门槛检验"></a> 双门槛检验</h3>
+<p><code>xthreg i q1 q2 q3 di qd1, rx(c1) qx(d1) thnum(2) grid(400) trim(0.01 0.01) bs(3 3)</code></p>
 <p>双门槛就是在单门槛命令的基础上，写两个缩尾，两个抽样次数</p>
-<p><img src="https://pic1.zhimg.com/80/v2-5f19470d0d3d3cca089cb45e215d95ae_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果5"><br><img src="https://picx.zhimg.com/80/v2-d1e6f20c028f23b9cca642a01a16bcee_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果6"></p>
+<p><img src="https://pic1.zhimg.com/80/v2-5f19470d0d3d3cca089cb45e215d95ae_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果5" /><br />
+<img src="https://picx.zhimg.com/80/v2-d1e6f20c028f23b9cca642a01a16bcee_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果6" /></p>
 <p>结果解释和画图参考单门槛</p>
-<p><img src="https://picx.zhimg.com/80/v2-10aeccbebadd6bea4d6d92e29ae69cf4_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果7"></p>
+<p><img src="https://picx.zhimg.com/80/v2-10aeccbebadd6bea4d6d92e29ae69cf4_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果7" /></p>
 <p>可以看到一个门槛值是0.0154，另一个门槛值是0.5418</p>
 <p>三门槛同理，注意门槛值的顺序要按照大小排列。</p>
 <p>发布于 2023-03-28 18:51</p>

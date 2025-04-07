@@ -98,7 +98,11 @@
 
 
   
-<meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
 
 
 <body>
@@ -291,29 +295,36 @@
                 
                 <p>参考视频：<a href="http://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1S5411U7dA/%3Fshare_source%3Dcopy_web%26vd_source%3D12ac86a295d3fda7c58a38c9b07e5584">http://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1S5411U7dA/%3Fshare_source%3Dcopy_web%26vd_source%3D12ac86a295d3fda7c58a38c9b07e5584</a></p>
 <p>本文仅用于自学，文字内容根据视频整理，侵删。</p>
-<p><img src="https://pica.zhimg.com/80/v2-fe2ad2a90385fbd1455451b2f24c8201_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="回归结果展示"></p>
+<p><img src="https://pica.zhimg.com/80/v2-fe2ad2a90385fbd1455451b2f24c8201_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="回归结果展示" /></p>
 <p>通常在做实证的时候stata跑出来以上的结果。我们通常只需要根据系数正负号判断影响方向，以及根据P值判断显著性即可。不过有的时候，我们也需要在文章中去解释我们回归系数的经济意义。这也是这篇笔记的由来。</p>
-<h2 id="一、回归系数的估计值：连续型变量。"><a href="#一、回归系数的估计值：连续型变量。" class="headerlink" title="一、回归系数的估计值：连续型变量。"></a>一、回归系数的估计值：连续型变量。</h2><p>当自变量x为连续型变量时，其系数β1的解释为：当其他自变量不变时，自变量x每增加一个单位，因变量y会变化β个单位。如上图mpg，系数为-13.4，则说明，mpg每增加一个单位，因变量price就会减少13.4元。</p>
-<h2 id="二、0、1变量"><a href="#二、0、1变量" class="headerlink" title="二、0、1变量"></a>二、0、1变量</h2><p>当自变量x为0或1变量时，其系数β2的解释为：当其他自变量不变时，自变量x取值为1时，因变量y会变化β2个单位。如上图foreign取值为1时，则二手车取值为外国车时，因变量price会增加3550.194元。</p>
-<h2 id="三、当取对数时"><a href="#三、当取对数时" class="headerlink" title="三、当取对数时"></a>三、当取对数时</h2><h3 id="1-自变量和因变量均为对数（log-log-model）"><a href="#1-自变量和因变量均为对数（log-log-model）" class="headerlink" title="1.自变量和因变量均为对数（log-log model）"></a>1.自变量和因变量均为对数（log-log model）</h3><p>如果把其看作一个整体，则是lnx每增加1个单位，lny增加β个单位。但是这样的解释是不可以的。应对x求偏导。结果解读应为：当其他变量不变时，自变量x增加1%，因变量y变化1%β个单位。</p>
-<p><img src="https://picx.zhimg.com/80/v2-b68bd01b3aa8ebaed1f3893feaa2818b_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="log-log model"></p>
-<h3 id="2-因变量取对数、自变量为连续型变量（log-linear-model）"><a href="#2-因变量取对数、自变量为连续型变量（log-linear-model）" class="headerlink" title="2.因变量取对数、自变量为连续型变量（log-linear model）"></a>2.因变量取对数、自变量为连续型变量（log-linear model）</h3><p><img src="https://picx.zhimg.com/80/v2-2a3cf7a2842dfc6c3e98990fcd2f5904_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="log-linear model"></p>
+<h2 id="一-回归系数的估计值连续型变量"><a class="markdownIt-Anchor" href="#一-回归系数的估计值连续型变量"></a> 一、回归系数的估计值：连续型变量。</h2>
+<p>当自变量x为连续型变量时，其系数β1的解释为：当其他自变量不变时，自变量x每增加一个单位，因变量y会变化β个单位。如上图mpg，系数为-13.4，则说明，mpg每增加一个单位，因变量price就会减少13.4元。</p>
+<h2 id="二-0-1变量"><a class="markdownIt-Anchor" href="#二-0-1变量"></a> 二、0、1变量</h2>
+<p>当自变量x为0或1变量时，其系数β2的解释为：当其他自变量不变时，自变量x取值为1时，因变量y会变化β2个单位。如上图foreign取值为1时，则二手车取值为外国车时，因变量price会增加3550.194元。</p>
+<h2 id="三-当取对数时"><a class="markdownIt-Anchor" href="#三-当取对数时"></a> 三、当取对数时</h2>
+<h3 id="1自变量和因变量均为对数log-log-model"><a class="markdownIt-Anchor" href="#1自变量和因变量均为对数log-log-model"></a> 1.自变量和因变量均为对数（log-log model）</h3>
+<p>如果把其看作一个整体，则是lnx每增加1个单位，lny增加β个单位。但是这样的解释是不可以的。应对x求偏导。结果解读应为：当其他变量不变时，自变量x增加1%，因变量y变化1%β个单位。</p>
+<p><img src="https://picx.zhimg.com/80/v2-b68bd01b3aa8ebaed1f3893feaa2818b_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="log-log model" /></p>
+<h3 id="2因变量取对数-自变量为连续型变量log-linear-model"><a class="markdownIt-Anchor" href="#2因变量取对数-自变量为连续型变量log-linear-model"></a> 2.因变量取对数、自变量为连续型变量（log-linear model）</h3>
+<p><img src="https://picx.zhimg.com/80/v2-2a3cf7a2842dfc6c3e98990fcd2f5904_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="log-linear model" /></p>
 <p>结果解读应为：当其他变量不变时，自变量x增加1，因变量y增加100%*β个单位。</p>
-<h3 id="3-自变量取对数（linear-log-model）"><a href="#3-自变量取对数（linear-log-model）" class="headerlink" title="3.自变量取对数（linear-log model）"></a>3.自变量取对数（linear-log model）</h3><p><img src="https://pic1.zhimg.com/80/v2-ade5ab107fe84c119a290b567fefb655_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="linear-log model"></p>
+<h3 id="3自变量取对数linear-log-model"><a class="markdownIt-Anchor" href="#3自变量取对数linear-log-model"></a> 3.自变量取对数（linear-log model）</h3>
+<p><img src="https://pic1.zhimg.com/80/v2-ade5ab107fe84c119a290b567fefb655_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="linear-log model" /></p>
 <p>结果应解读为：当其他变量不变时，自变量x增加1%，因变量变化0.01*β个单位。</p>
-<h2 id="四、回归系数的经济解读"><a href="#四、回归系数的经济解读" class="headerlink" title="四、回归系数的经济解读"></a>四、回归系数的经济解读</h2><p>自变量可以分为：分类型自变量（0-1）、计数型自变量（不能取负数，一般不取小数）、连续型自变量</p>
+<h2 id="四-回归系数的经济解读"><a class="markdownIt-Anchor" href="#四-回归系数的经济解读"></a> 四、回归系数的经济解读</h2>
+<p>自变量可以分为：分类型自变量（0-1）、计数型自变量（不能取负数，一般不取小数）、连续型自变量</p>
 <p>当自变量为分类型（0-1）变量时，回归结果可以解释为：不同分组的因变量平均值差值。</p>
-<p><img src="https://picx.zhimg.com/80/v2-a9df63c590e01cd837408b47f91d4509_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="自变量为分类型变量"></p>
+<p><img src="https://picx.zhimg.com/80/v2-a9df63c590e01cd837408b47f91d4509_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="自变量为分类型变量" /></p>
 <p>当自变量为计数型变量时，回归结果可以解释为：次数或者个数增加1，因变量取值增加β</p>
-<p><img src="https://pic1.zhimg.com/80/v2-570505199e6dfb70be5a97ff8471d61a_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="自变量为计数型变量"></p>
+<p><img src="https://pic1.zhimg.com/80/v2-570505199e6dfb70be5a97ff8471d61a_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="自变量为计数型变量" /></p>
 <p>当自变量为连续型变量时，自变量增加一个单位，因变量增加β。</p>
 <p>但同时，自变量和因变量的取值范围往往也会影响其经济意义（具体请看下面这个视频的例子，非常好）</p>
 <p>参考视频：<a href="http://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV11T411M7AY/%3Fshare_source%3Dcopy_web%26vd_source%3D12ac86a295d3fda7c58a38c9b07e5584">http://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV11T411M7AY/%3Fshare_source%3Dcopy_web%26vd_source%3D12ac86a295d3fda7c58a38c9b07e5584</a></p>
 <p>所以，一个很好的解释经济意义的方法是，用标准差衡量，即自变量每增加一个标准差，因变量会增加β*标准差的值。该增加量占因变量平均值的【XXX】。（划重点）！</p>
-<p><img src="https://picx.zhimg.com/80/v2-2ed1bbd2be268acd1904b1ae5ef0a895_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="标准差"></p>
-<p><img src="https://pica.zhimg.com/80/v2-b4ed571cbe43222f4641a75efa52d53f_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="标准差2"></p>
+<p><img src="https://picx.zhimg.com/80/v2-2ed1bbd2be268acd1904b1ae5ef0a895_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="标准差" /></p>
+<p><img src="https://pica.zhimg.com/80/v2-b4ed571cbe43222f4641a75efa52d53f_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="标准差2" /></p>
 <p>其实视频中，没有讨论到一个现实中更常见的问题，当自变量为0-1变量，因变量取对数时（大多数did的文章），该如何解释系数的意义。后面我在公众号搜到了答案。（懒得打字，看图吧）</p>
-<p><img src="https://picx.zhimg.com/80/v2-5b1182343c63ac078a88c4572de0f69c_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="自变量为0/1变量，因变量取对数"></p>
+<p><img src="https://picx.zhimg.com/80/v2-5b1182343c63ac078a88c4572de0f69c_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="自变量为0/1变量，因变量取对数" /></p>
 
                 
               </div>

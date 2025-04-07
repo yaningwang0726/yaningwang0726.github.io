@@ -319,7 +319,7 @@
 <p>2.对变量进行单位根检验：用以检验变量的平稳性，如果序列中存在单位根过程不平稳，就会使回归分析中存在伪回归。如果数据平稳就是进行门槛模型检验，单位根检验的命令如下：<br><img src="https://picx.zhimg.com/80/v2-70b652930b3bc519cde31bc5e7bf6f03_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="命令"></p>
 <p>以Hansen1999的数据为例，i 为被解释变量，c1是核心解释变量（受门槛变量影响的解释变量），d1是门槛变量“q1 q2 q3 d1 qd1”为控制变量<br><img src="https://pica.zhimg.com/80/v2-8c61a275e8caf212e62f09dbb200b6f3_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果展示"></p>
 <p>通过看p-value判断是否符合显著性，p显著，数据是平稳的。然后执行门槛命令</p>
-<p><code>xthreg i q1 q2 q3 d1 qd1, rx(c1) qx(d1) thrum(1) grid(400) trim(0.01) bs(3)</code>  &#x2F;&#x2F;&#x2F;单门槛检验 bs抽样次数可自行更改，一般300或者500都行</p>
+<p><code>xthreg i q1 q2 q3 d1 qd1, rx(c1) qx(d1) thrum(1) grid(400) trim(0.01) bs(3)</code>  ///单门槛检验 bs抽样次数可自行更改，一般300或者500都行</p>
 <h2 id="结果解读：一般报告以下内容"><a href="#结果解读：一般报告以下内容" class="headerlink" title="结果解读：一般报告以下内容"></a>结果解读：一般报告以下内容</h2><h3 id="门槛值"><a href="#门槛值" class="headerlink" title="门槛值"></a>门槛值</h3><p><img src="https://picx.zhimg.com/80/v2-29d017d296eb911d2b1ed44eb2a9f82f_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果1"></p>
 <h3 id="门槛值的显著性水平"><a href="#门槛值的显著性水平" class="headerlink" title="门槛值的显著性水平"></a>门槛值的显著性水平</h3><p><img src="https://pica.zhimg.com/80/v2-f52c1c75d976857855ff87884810b735_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果2"></p>
 <h3 id="回归结果"><a href="#回归结果" class="headerlink" title="回归结果"></a>回归结果</h3><p><img src="https://picx.zhimg.com/80/v2-844b1b10f3017d8c99dfb709e65d992e_720w.webp?source=d16d100b" srcset="/img/loading.gif" lazyload alt="结果3"></p>

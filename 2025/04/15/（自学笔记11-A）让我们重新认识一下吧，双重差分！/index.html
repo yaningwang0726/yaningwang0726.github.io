@@ -19,21 +19,21 @@
   <meta name="author" content="Wyn">
   <meta name="keywords" content="">
   
-    <meta name="description" content="不仅说话违背其知识的人在说谎，更有甚者，说话违背其无知的人也在说谎。所以你们在交流中相互谈论自己，用你们自己来欺骗邻人。傻瓜如是说：“同人打交道会破坏刚强性格，尤其是在你没有刚强性格的时候。”一个人去邻人那里，因为他寻求自我，而另一个人去邻人那里，因为他想要丧失自我。你们不爱你们自己，使孤独成为你们的一所监狱。是较远者为你们对邻人之爱付出了代价；而如果你们相互之间是五个人，那么第六个人总得死去">
+    <meta name="description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。最基本的DID形式与概念&emsp;&emsp;假设有两个城市A和B，在T&#x3D;0时期，这两座城市的发展趋势没有什么差异，此时，政府将城市A设立为低碳试点城市，在T&#x3D;1时期，城市A相较于城市B的环境污染情况出现">
 <meta property="og:type" content="article">
-<meta property="og:title" content="（文摘2）之前看过的碎片">
-<meta property="og:url" content="http://wynwynwyn.xyz/2025/04/14/%EF%BC%88%E6%96%87%E6%91%982%EF%BC%89%E4%B9%8B%E5%89%8D%E7%9C%8B%E8%BF%87%E7%9A%84%E7%A2%8E%E7%89%87/index.html">
+<meta property="og:title" content="（自学笔记11）让我们重新认识一下吧，双重差分！">
+<meta property="og:url" content="http://wynwynwyn.xyz/2025/04/15/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B011-A%EF%BC%89%E8%AE%A9%E6%88%91%E4%BB%AC%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B%E5%90%A7%EF%BC%8C%E5%8F%8C%E9%87%8D%E5%B7%AE%E5%88%86%EF%BC%81/index.html">
 <meta property="og:site_name" content="Wyn的窄门">
-<meta property="og:description" content="不仅说话违背其知识的人在说谎，更有甚者，说话违背其无知的人也在说谎。所以你们在交流中相互谈论自己，用你们自己来欺骗邻人。傻瓜如是说：“同人打交道会破坏刚强性格，尤其是在你没有刚强性格的时候。”一个人去邻人那里，因为他寻求自我，而另一个人去邻人那里，因为他想要丧失自我。你们不爱你们自己，使孤独成为你们的一所监狱。是较远者为你们对邻人之爱付出了代价；而如果你们相互之间是五个人，那么第六个人总得死去">
+<meta property="og:description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。最基本的DID形式与概念&emsp;&emsp;假设有两个城市A和B，在T&#x3D;0时期，这两座城市的发展趋势没有什么差异，此时，政府将城市A设立为低碳试点城市，在T&#x3D;1时期，城市A相较于城市B的环境污染情况出现">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-04-14T11:44:51.000Z">
-<meta property="article:modified_time" content="2025-04-14T12:56:27.949Z">
+<meta property="article:published_time" content="2025-04-15T03:49:58.000Z">
+<meta property="article:modified_time" content="2025-04-15T06:02:18.757Z">
 <meta property="article:author" content="Wyn">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>（文摘2）之前看过的碎片 - Wyn的窄门</title>
+  <title>（自学笔记11）让我们重新认识一下吧，双重差分！ - Wyn的窄门</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -44,6 +44,8 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
 
 
 
@@ -207,7 +209,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="（文摘2）之前看过的碎片"></span>
+            <span id="subtitle" data-typed-text="（自学笔记11）让我们重新认识一下吧，双重差分！"></span>
           
         </div>
 
@@ -218,8 +220,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-04-14 19:44" pubdate>
-          2025年4月14日 晚上
+        <time datetime="2025-04-15 11:49" pubdate>
+          2025年4月15日 中午
         </time>
       </span>
     
@@ -230,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.2k 字
+          2.1k 字
         
       </span>
     
@@ -241,7 +243,7 @@
         
         
         
-          27 分钟
+          18 分钟
         
       </span>
     
@@ -278,26 +280,113 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">（文摘2）之前看过的碎片</h1>
+            <h1 id="seo-header">（自学笔记11）让我们重新认识一下吧，双重差分！</h1>
             
             
               <div class="markdown-body">
                 
-                <p>  不仅说话违背其知识的人在说谎，更有甚者，说话违背其无知的人也在说谎。所以你们在交流中相互谈论自己，用你们自己来欺骗邻人。傻瓜如是说：“同人打交道会破坏刚强性格，尤其是在你没有刚强性格的时候。”一个人去邻人那里，因为他寻求自我，而另一个人去邻人那里，因为他想要丧失自我。你们不爱你们自己，使孤独成为你们的一所监狱。是较远者为你们对邻人之爱付出了代价；而如果你们相互之间是五个人，那么第六个人总得死去。我甚至也不爱你们的庆祝活动：我发现那里有太多的演员，甚至观众的举止也经常像演员。   尼采《查拉图斯特拉如是说》</p>
-<p>  怎么应对自己的虚荣啊，很大的内在的虚荣，对被历史承认的渴望，就是你想留下杰作，想被铭记，想被广泛地认可，更大的历史时空中被认可，沮丧的是，我觉得我的迷茫少了很多，我的迷茫和困惑少了很多，我希望能更勇敢一点。   许知远访谈</p>
-<p>  哲学家以探究生命的意义为己任，这也就给了他一个评判自己所处时代的根本标准。尼采据此来观察他的时代，他看到的是什么？最触目惊心的是一种没头脑的匆忙，它确证了生命意义的迷失，尼采对现代人的匆忙深恶痛绝，一再指出：“普通的匆忙和越来越快的生活节奏”“一切悠闲和单纯的消失”，乃是“文化整个被连根拔起的征兆”“那种匆忙，那种令人不得喘息的分秒必争，那种不等便成熟采摘一切果实的急躁，那种你追我赶的竞争，它在人们脸上刻下了深沟，仿佛有一种药剂在他们体内作怪，使他们不再能平静地呼吸，他们心怀鬼胎地向前猛冲…”</p>
-<p>  比误解更严重的是，作为时代的一员，哲学家也会感染时代的疾患。比如说，尼采就为生命意义的迷失而痛苦。和普通人不同的是，哲学家对时代的疾患有更强烈和敏锐的感受，因而更加痛苦。尼采描述这种情形说：“如果每一个伟人都宁愿被视为他的时代的嫡子，始终比一切普通人更加强烈和敏感地因时代的斗争的种种缺陷而痛苦，那么这样一个伟人反对其时代的斗争似乎只是反对他自己的一场荒唐的自杀性斗争。”然而，他紧接着分析说：“不过，仅仅似乎如此，因为在时代之中，他反对的是那阻碍他成其伟大的东西，对他来说，成其伟大也就是自由地，完全地成为他自己。因此，他的矛头所指正是那种虽然在他身上，却并不真正属于他的东西，亦即那种把不可混同、永远不可统一的东西掺和在一起的做法，那种把时代特征错误地焊接到他的不合时宜的天性上去的做法；所谓时代之子终于显出原型，原来只是时代的样子。”时代的养子——这才是哲学家与时代的真实关系。哲学家仿佛是直接由天地精神所生，只是偶然地寄养在这个时代罢了。</p>
-<p>  你说的那个诗意的世界，它会回来吗，应该强调科学本身的有限性，就人的存在本身，而且这个谜，它实际上是一个正面意义的谜，人的存在作为一个谜的存在，它是有正面意义的，就不可解释性是非常重要的、非常奢侈的一种精神状态，是一种哲学上的不能破解，它是一种先天的盲点，呵护盲点是人类唯一的希望。   许知远《十三邀》</p>
-<p>  我觉得人最大的痛苦就是无法跨越知道和做到的鸿沟。笛卡尔所说的“我思故我在”，这个很对。但是“我思故我在”会经常让我们沉浸于一种幻想之中，就是我只要思考到了我就能做到，但其实不是这样。你思考过深刻的东西，你说过深刻的东西，你感动过深刻的东西，你为你自己所说的感动了，你就真的觉得自己做到了。很大的时候，这是一种自欺…所以从那个时候我就希望能够过一种生活，给自己的目标，至少那么多年来我现在给自己的功课就是…当然虚伪是肯定的，每天都活不到那么清澈。只能是你的行动在你的言语之前能够多那么一步，我觉得就可以摆脱这种虚伪的自我控诉。   罗翔与许知远的对话《十三邀》</p>
-<p>  严肃处理现代历史的教训，需要认识到现代性的内在紧张。哈贝马斯在战后对德国问题以及对整个现代性的思考，都切入现代性内部的复杂性，充分注意到启蒙传动的自我紧张、现代性与反现代性的辩证关系。只要这种紧张是现代性的内在属性，德国道路的诱惑就不会终结。黑格尔说，重大历史事件会出现两次；马克思补充说，第一次是悲剧，第二次是闹剧。这部著作激发的思考，以及我们的思想努力，就是要力争摆脱一种闹剧的命运。   刘擎《做一个清醒的现代人》</p>
-<p>  我们这个时代是一个过度反思的时代，对于我们个人来说，反思需要与天性的力量相结合，如果基于天性的孱弱而过度的反思将会走向毁灭。而在哲学的起点希腊，希腊人爱反思而且天性强。   陈嘉映《十三邀》</p>
-<p>  维特根斯坦也很反感那种过度反思导致的混乱，提出一些根本就不存在的问题，并为解决这些问题而痛苦不堪。他说过一段常被引用的名言：一个人陷入哲学混乱，就像一个在房间里想要出去又不知道怎么办的人，他试着想从窗子出去，但窗子太高；他试着从烟囱出去，但烟囱太窄；其实只要他一转身，就会看见房门一直是开着的。   曹林《面对生活，避免评论的过度反思》</p>
-<p>  在20多年前，一个“自由主义者”很可能被看作一名敏锐而勇敢的“前卫思想者”，会博得许多共鸣和赞赏。而在今天——在自由主义据说是“浮出水面”多年之后的今天，如果你仍然宣称自己是一个自由主义者，那么很可能会遭到鄙夷和讥讽。因为在不少人看来，自由主义者是知识和道德双重意义上的“嫌疑分子”。就知识学理而言，自由主义者常常被等同于天真的现代化论者、幼稚的发展主义者，或者浅薄的权力至上的原子化个人主义者，大概既没有经过各种激进的批判理论的洗礼，也未曾受到深刻的保守主义思想的熏陶。而在道德上，自由主义的主张似乎意味着崇尚“没有良心”的市场资本注意，无视经济平等和社会正义，涉嫌与权贵精英的宰制合谋，为资本主义的全球化背书。   刘擎《做一个清醒的现代人》</p>
-<p>  我感到未尝经验的无聊，是自此以后的事。我当初是不知其所以然的；后来想，凡有一人的主张，得了赞和，是促其前进的，得了反对，是促其奋斗的，独有叫喊于生人中，而生人并无反应，既非赞同，也无反对，如置身毫无边际的荒原，无可措手的了，这是怎样的悲哀呵，我于是以我所感到者为寂寞。这寂寞又一天一天的长大起来，如大毒蛇，缠住了我的灵魂了。然而我虽然自有无端的悲哀，却也并不愤懑，因为这经验使我反省，看见自己了：就是我决不是一个振臂一呼应者云集的英雄。只是我自己的寂寞是不可不驱除的，因为这于我太痛苦。我于是用了种种法，来麻醉自己的灵魂，使我沉入于国民中，使我回到古代去，后来也亲历或旁观过几样更寂寞、更悲哀的事，都为我所不愿追怀，甘心使他们和我的脑一同消失在泥土里的，但我的麻醉法却也似乎已经奏了功，再没有青年时候的慷慨激昂的意思了。   鲁迅《鲁迅全集》</p>
-<p>  评论：我一直认为的个人成长与人生选择过程中的三个悖论：一，18岁在对学科与知识一无所知的时候就被要求选择自己的专业；二，22-25岁在对商业世界运行规律毫无概念的时候就被要求选择工作方向；三、25-28岁在对自己和人际关系一知半解的情况下就被要求确定长期伴侣。这样想来，其实人生出问题是一个大概率事件。   评论的评论：这三个悖论，其实是需要父母或者靠谱的长辈把关的，如果父母长辈能给出具有前瞻性的建议，孩子就能走相当少的弯路。我工作后在遇到很多在自己现在领域风生水起的人，其中相当一部分最大的遗憾就是当自己面对这三个悖论的时候，没有一个思路清晰、目光长远、见识卓绝的人来给自己指路，导致自己摸着石头过河，跌跌撞撞才到今日。而这些人的出身，大多是县城或者农村，所谓“教育的不公平”，其实从父母见识的局限上，就开始了。</p>
-<p>  如果说“愤世嫉俗总是理想主义的，而且是十分激烈的理想主义”，那么“玩世不恭则是彻底的非理想主义，彻底的无理想主义”。这位学者认为，“偏偏是那些看上去最激烈的理想主义反倒很容易转变为彻底的无理想主义，其间原因何在？因为，许多愤世嫉俗的理想主义者在看待世界时缺乏程度意识或曰分寸感，对他人缺乏设身处地的同情的理解，不承认各种价值之间的紧张与冲突，这样，他们很容易把世界看成一片漆黑，由此便使自己陷入悲观失望，再进而怀疑和否认美好价值的存在，最终则是放弃理想放弃追求”。  周濂《打开：周濂的100堂西方哲学课》</p>
-<p>  最后，我想说的是，人之一生，迟早会把自己交付给一个比自己更高的存在者，它可能是上帝，可能是组织，可能是金钱、诗歌，或者远方，以及各式各样千奇百怪的主义。问题在于，你在交付之前，是不是经过百转千回的痛苦思索和挣扎？在交付之后，在那个更高的存在者的阴影下面，你能否还保有哪怕一丁点儿的怀疑和反思？太过轻易地委身于人，总让人怀疑之前的挣扎缺乏真诚。交付之后便意志坚定地把它当作福音传递给他人，则是一种让人难以忍受的蒙昧，哪怕它以信仰的面目呈现。  周濂《打开：周濂的100堂西方哲学课》</p>
-<p>  生命是我自己的东西，所以我不妨大步走去，向着我自以为可以走去的路；即使前面是深渊，荆棘，狭谷，火坑，都由我自己负责。  鲁迅《华盖集·北京通信》</p>
+                <h4 id="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。"><a href="#以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。" class="headerlink" title="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。"></a>以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。</h4><h4 id="计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。"><a href="#计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。" class="headerlink" title="计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。"></a>计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。</h4><h2 id="最基本的DID形式与概念"><a href="#最基本的DID形式与概念" class="headerlink" title="最基本的DID形式与概念"></a>最基本的DID形式与概念</h2><p>&emsp;&emsp;假设有两个城市A和B，在T=0时期，这两座城市的发展趋势没有什么差异，此时，政府将城市A设立为低碳试点城市，在T=1时期，城市A相较于城市B的环境污染情况出现了差异。去捕捉变化的方法叫作双重差分。</p>
+<p>&emsp;&emsp;双重差分依赖于准自然实验，实验的处理效应是参与实验的个体参与试验后的结果减去其如果不参与实验后的结果。即：</p>
+<script type="math/tex; mode=display">E[y_1-y_0|D=1]=E[y_1|D=1]-E[y_0|D=1]</script><p>&emsp;&emsp;而此时，反事实的结果（不参与实验的结果）现实当中是观察不到的。DID的思路就是：寻找一个合意的控制组。合成控制法的思路是：拟合一个反事实结果。</p>
+<h3 id="DID的适用条件"><a href="#DID的适用条件" class="headerlink" title="DID的适用条件"></a>DID的适用条件</h3><p>&emsp;&emsp;DID的处理效应：用实验组个体参与实验后的结果减去控制组个体不参与实验后的结果：</p>
+<script type="math/tex; mode=display">E[\Delta{y_1}|D=1]-E[\Delta{y_0}|D=0]=E[\Delta{y_1}|D=1]-E[\Delta{y_0}|D=1]+E[\Delta{y_0}|D=1]-E[\Delta{y_0}|D=0]</script><h4 id="分组随机且组间可比"><a href="#分组随机且组间可比" class="headerlink" title="分组随机且组间可比"></a>分组随机且组间可比</h4><p>&emsp;&emsp;满足平行趋势（给定分组，两组之间具有平行趋势）</p>
+<p>&emsp;&emsp;分组自选择性弱（随便如何分组，这种平行趋势都存在）</p>
+<p>&emsp;&emsp;组间异质性尽量小（平行趋势不仅仅是均值的平行）</p>
+<h4 id="分组后没有溢出效应"><a href="#分组后没有溢出效应" class="headerlink" title="分组后没有溢出效应"></a>分组后没有溢出效应</h4><p>&emsp;&emsp;例如，城市A和城市B之间，不存在着污染的跨区域流动。（这里我想到当初模仿数经上面一个DID论文，他的卖点恰好就是放松了DID溢出效应的设定，也就是将受到政策冲击组的邻近城市作为实验组，去检验DID的溢出效应。不知道这样做是否合理？）</p>
+<h4 id="DID适用性的检验"><a href="#DID适用性的检验" class="headerlink" title="DID适用性的检验"></a>DID适用性的检验</h4><p>&emsp;&emsp;对于单期DID，最直观的方式就是平行趋势的画图！画的是分组的E[Y]或者E[残差项]</p>
+<p>&emsp;&emsp;对于多期DID，其平行趋势检验应用了事件研究法，也就是将时间变量设定为虚拟变量</p>
+<p>&emsp;&emsp;安慰剂检验：构造伪政策冲击时间、或者伪实验组</p>
+<p>&emsp;&emsp;分组自选择性检验：只用实验期前的数据进行回归，理想情况下系数不显著。</p>
+<p>&emsp;&emsp;其他方法：工具变量、Heckman两步法、机器学习等。</p>
+<h2 id="DID形式的拓展"><a href="#DID形式的拓展" class="headerlink" title="DID形式的拓展"></a>DID形式的拓展</h2><p>&emsp;&emsp;广义DID（连续DID）：个体同时受政策影响，但影响程度不同。这种设定可以讨论没有控制组的情况，但是只保留了DID的形式（针对全面铺开的政策）。另外也有文章对影响程度进行了人为的划分，进而分出实验组和控制组，这种主观性较强，需要更多的稳健性检验。</p>
+<p>&emsp;&emsp;多期DID（目前大多数，也是被研究最多的DID形式）：实验组受政策影响的时间是不同的。</p>
+<p>&emsp;&emsp;PSM-DID：解决组间可比的问题（样本差异不要过大），解决分组自选择的问题，感觉目前多数作为稳健性检验去做。</p>
+<p>&emsp;&emsp;RD-DID：某些时候不能用PSM，因为出现了根据某一个X，实验组的样本参与实验的概率都是1，控制组参与实验的概率都是0的现象，也就是断点回归。</p>
+<h2 id="多期双重差分的研究进展"><a href="#多期双重差分的研究进展" class="headerlink" title="多期双重差分的研究进展"></a>多期双重差分的研究进展</h2><h4 id="这里的“多期”是指政策冲击时间的多期，也就是交叠DID，“单期”是指政策冲击时间的唯一，也就是传统的DID。"><a href="#这里的“多期”是指政策冲击时间的多期，也就是交叠DID，“单期”是指政策冲击时间的唯一，也就是传统的DID。" class="headerlink" title="这里的“多期”是指政策冲击时间的多期，也就是交叠DID，“单期”是指政策冲击时间的唯一，也就是传统的DID。"></a>这里的“多期”是指政策冲击时间的多期，也就是交叠DID，“单期”是指政策冲击时间的唯一，也就是传统的DID。</h4><h3 id="单期DID与多期DID的估计结果差异"><a href="#单期DID与多期DID的估计结果差异" class="headerlink" title="单期DID与多期DID的估计结果差异"></a>单期DID与多期DID的估计结果差异</h3><h4 id="案例和代码来自许文立老师宏观研学会公众号"><a href="#案例和代码来自许文立老师宏观研学会公众号" class="headerlink" title="案例和代码来自许文立老师宏观研学会公众号"></a>案例和代码来自许文立老师宏观研学会公众号</h4><p>对于受到相同时间政策冲击的实验组来说，可以建立这样一个简单的stata数据集。该数据集由一个控制组和两个实验组构成，并且两个实验组受到的政策冲击影响不同。</p>
+<pre><code class="hljs">`DID*********************************************** 同时处理，但处理强度不同
+clear      // 清除stata已存在的数据
+local units = 3
+local start = 1
+local end   = 20
+local time = `end&#39; - `start&#39; + 1
+local obsv = `units&#39; * `time&#39;
+set obs `obsv&#39;
+egen NU     = seq(), b(`time&#39;)  
+egen Period = seq(), f(`start&#39;) t(`end&#39;)   
+sort NU Period
+xtset NU Period    // 声明面板数据类型
+lab var NU &quot;Panel variable&quot;
+lab var Period  &quot;Time  variable&quot;
+* 假设在第5期之后，有新校区假设
+* 创建处理变量T和结果变量y
+gen T = 0
+replace T = 1 if NU&gt;=2 &amp; Period&gt;=5    //处理发生在第二和三个id，第5期，这时T=1，其它所有情况T=0
+lab var T &quot;Treated&quot;
+cap drop Y
+gen Y = 0
+replace Y = cond(T==1, 2, 0) if NU==2
+replace Y = cond(T==1, 4, 0) if NU==3
+lab var Y &quot;Outcome variable&quot;  
+twoway (connected Y Period if NU==1) (connected Y Period if NU==2) (connected Y Period if NU==3)  ,  xline(4.5) xlabel(1(1)20)     legend(order(1 &quot;NU=1&quot; 2 &quot;NU=2&quot; 3 &quot;NU=3&quot;))
+* 面板数据回归
+xtreg Y T Period,fe    
+reghdfe Y T, absorb(NU Period) `
+</code></pre><p>&emsp;&emsp;通过stata命令可以得出平均处理效应（ATT）为3，即2和3的处理效应的平均值，在最终的ATTA里，两个处理组的权重都是0.5。这是没有假如个体固定效应和时间固定效应的ATT，当假如了控制变量，如固定效应后，再观察其结果。</p>
+<pre><code class="hljs">`* 首先，舍弃上例中生成的数据，重新来生成Y的数据cap drop Y
+gen Y = 0
+replace Y = NU + Period + cond(T==1, 0, 0) if NU==1
+replace Y = NU + Period + cond(T==1, 2, 0) if NU==2
+replace Y = NU + Period + cond(T==1, 4, 0) if NU==3
+lab var Y &quot;Outcome variable&quot;
+* 可视化数据
+twoway  (connected Y Period if NU==1) (connected Y Period if NU==2)  (connected Y Period if NU==3) , xline(4.5)  xlabel(1(1)10) legend(order(1 &quot;NU=1&quot; 2 &quot;NU=2&quot; 3 &quot;NU=3&quot;))
+*此时的ATT无法直观观察到，需要通过回归计算
+reghdfe Y T, absorb(NU Period)
+*可以比较不同控制情形下的结果
+reg Y T        // 不控制任何因素
+reg Y T i.Period      // 仅仅控制时间固定效应
+reg Y T i.NU    // 仅仅控制个体固定效应
+reg Y T i.Period i.NU  // 双向固定效应(正确!)
+</code></pre><p>&emsp;&emsp;而针对多期DID（不同处理期）来说，ATT的结果又会不一样。同样利用模拟数据进行演示：</p>
+<pre><code class="hljs">`clear      // 清除stata已存在的数据
+local units = 3
+local start = 1
+local end   = 20
+local time = `end&#39; - `start&#39; + 1
+local obsv = `units&#39; * `time&#39;
+set obs `obsv&#39;
+egen NU     = seq(), b(`time&#39;)  
+egen Period = seq(), f(`start&#39;) t(`end&#39;)   
+sort NU Period
+xtset NU Period    // 声明面板数据类型
+lab var NU &quot;Panel variable&quot;
+lab var Period  &quot;Time  variable&quot;
+* 假设在第5期之后，有新校区假设
+* 创建处理变量T和结果变量y
+gen T = 0
+replace T = 1 if NU==2 &amp; Period&gt;=5   //处理发生在第二个id，第5期，这时T=1，其它所有情况T=0
+replace T = 1 if NU==3 &amp; Period&gt;=10   //处理发生在第三个id，第10期，这时T=1，其它所有情况T=0
+lab var T &quot;Treated&quot;
+cap drop Y
+gen Y = 0
+replace Y = cond(T==1, 2, 0) if NU==2
+replace Y = cond(T==1, 4, 0) if NU==3
+lab var Y &quot;Outcome variable&quot;  
+twoway (connected Y Period if NU==1) (connected Y Period if NU==2) (connected Y Period if NU==3) , xline(4.5) xlabel(1(1)20) legend(order(1 &quot;NU=1&quot; 2 &quot;NU=2&quot; 3 &quot;NU=3&quot;))
+*运行回归命令计算结果
+reghdfe Y T ,absorb(NU Period)
+*此时的ATT为3.21
+*而考虑了个体和时间趋势下，回归后的ATT为3.29
+cap drop Y
+gen Y = 0
+replace Y = NU + Period + cond(T==1, 0, 0) if NU==1
+replace Y = NU + Period + cond(T==1, 2, 0) if NU==2
+replace Y = NU + Period + cond(T==1, 4, 0) if NU==3
+lab var Y &quot;Outcome variable&quot;
+* 可视化数据
+twoway (connected Y Period if NU==1) (connected Y Period if NU==2)  (connected Y Period if NU==3)  ,  xline(4.5)  xlabel(1(1)10) legend(order(1 &quot;NU=1&quot; 2 &quot;NU=2&quot; 3 &quot;NU=3&quot;))
+reghdfe Y T ,absorb(NU Period)
+</code></pre><p>&emsp;&emsp;为什么呢？因为此刻处理时点发生了变化，个体2是在第五期受到处理，而个体3是在第十期受到处理。因此，就无法清晰区分出“处理前”和“处理后”，也不能很好区分“处理组”和“对照组”。例如在第5-10期，只有NU=2这个组群发生了变化，其他两个组群都保持不变。那么该如何理解ATTA=3.29这个估计值呢？这就是目前多期DID所探讨的问题。</p>
 
                 
               </div>
@@ -316,7 +405,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%96%87%E6%91%98/" class="category-chain-item">文摘</a>
+  <a href="/categories/%E5%90%B8%E6%94%B6/" class="category-chain-item">吸收</a>
   
   
 
@@ -336,8 +425,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>（文摘2）之前看过的碎片</div>
-      <div>http://wynwynwyn.xyz/2025/04/14/（文摘2）之前看过的碎片/</div>
+      <div>（自学笔记11）让我们重新认识一下吧，双重差分！</div>
+      <div>http://wynwynwyn.xyz/2025/04/15/（自学笔记11-A）让我们重新认识一下吧，双重差分！/</div>
     </div>
     <div class="license-meta">
       
@@ -349,7 +438,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年4月14日</div>
+          <div>2025年4月15日</div>
         </div>
       
       
@@ -381,18 +470,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/04/15/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B011-A%EF%BC%89%E8%AE%A9%E6%88%91%E4%BB%AC%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B%E5%90%A7%EF%BC%8C%E5%8F%8C%E9%87%8D%E5%B7%AE%E5%88%86%EF%BC%81/" title="（自学笔记11）让我们重新认识一下吧，双重差分！">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">（自学笔记11）让我们重新认识一下吧，双重差分！</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/03/31/%E7%AC%AC15%E7%AF%87%EF%BC%9A%E8%87%B4%E8%B0%A2%E3%80%82/" title="第15篇：致谢。">
-                        <span class="hidden-mobile">第15篇：致谢。</span>
+                      <a href="/2025/04/14/%EF%BC%88%E6%96%87%E6%91%982%EF%BC%89%E4%B9%8B%E5%89%8D%E7%9C%8B%E8%BF%87%E7%9A%84%E7%A2%8E%E7%89%87/" title="（文摘2）之前看过的碎片">
+                        <span class="hidden-mobile">（文摘2）之前看过的碎片</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -449,6 +532,11 @@
 
 
   
+
+
+  
+  
+
 
 
 

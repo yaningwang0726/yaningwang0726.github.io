@@ -19,21 +19,21 @@
   <meta name="author" content="Wyn">
   <meta name="keywords" content="">
   
-    <meta name="description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。最基本的DID形式与概念&emsp;&emsp;假设有两个城市A和B，在T&#x3D;0时期，这两座城市的发展趋势没有什么差异，此时，政府将城市A设立为低碳试点城市，在T&#x3D;1时期，城市A相较于城市B的环境污染情况出现">
+    <meta name="description" content="由于这本书的设定，前面的部分有很多错别字，导致看的时候非常别扭，但后面高登智力变正常后，读进去才感到幸好自己没有放弃读。&emsp;&emsp;在我来得及抗议或问她是什么意思之前，她已经开始往内走。“晚安，查理，再次谢谢你陪我度过这美妙…美妙的时光。”然后她就把门关上。 &emsp;&emsp;我对她、对我，以及这世界感到愤怒，但回到家时，我了解到她是对的。现在，我已经弄不清她是喜欢我，或只是对我">
 <meta property="og:type" content="article">
-<meta property="og:title" content="（自学笔记11）让我们重新认识一下吧，双重差分！">
-<meta property="og:url" content="http://wynwynwyn.xyz/2025/04/15/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B011-A%EF%BC%89%E8%AE%A9%E6%88%91%E4%BB%AC%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B%E5%90%A7%EF%BC%8C%E5%8F%8C%E9%87%8D%E5%B7%AE%E5%88%86%EF%BC%81/index.html">
+<meta property="og:title" content="（文摘4）献给阿尔吉侬的花束">
+<meta property="og:url" content="http://wynwynwyn.xyz/2025/04/16/%EF%BC%88%E6%96%87%E6%91%984%EF%BC%89%E7%8C%AE%E7%BB%99%E9%98%BF%E5%B0%94%E5%90%89%E4%BE%AC%E7%9A%84%E8%8A%B1%E6%9D%9F/index.html">
 <meta property="og:site_name" content="Wyn的窄门">
-<meta property="og:description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。最基本的DID形式与概念&emsp;&emsp;假设有两个城市A和B，在T&#x3D;0时期，这两座城市的发展趋势没有什么差异，此时，政府将城市A设立为低碳试点城市，在T&#x3D;1时期，城市A相较于城市B的环境污染情况出现">
+<meta property="og:description" content="由于这本书的设定，前面的部分有很多错别字，导致看的时候非常别扭，但后面高登智力变正常后，读进去才感到幸好自己没有放弃读。&emsp;&emsp;在我来得及抗议或问她是什么意思之前，她已经开始往内走。“晚安，查理，再次谢谢你陪我度过这美妙…美妙的时光。”然后她就把门关上。 &emsp;&emsp;我对她、对我，以及这世界感到愤怒，但回到家时，我了解到她是对的。现在，我已经弄不清她是喜欢我，或只是对我">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-04-15T03:49:58.000Z">
-<meta property="article:modified_time" content="2025-04-15T06:02:18.757Z">
+<meta property="article:published_time" content="2025-04-16T07:09:20.000Z">
+<meta property="article:modified_time" content="2025-04-16T07:23:31.537Z">
 <meta property="article:author" content="Wyn">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>（自学笔记11）让我们重新认识一下吧，双重差分！ - Wyn的窄门</title>
+  <title>（文摘4）献给阿尔吉侬的花束 - Wyn的窄门</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -44,8 +44,6 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
 
 
 
@@ -209,7 +207,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="（自学笔记11）让我们重新认识一下吧，双重差分！"></span>
+            <span id="subtitle" data-typed-text="（文摘4）献给阿尔吉侬的花束"></span>
           
         </div>
 
@@ -220,8 +218,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-04-15 11:49" pubdate>
-          2025年4月15日 中午
+        <time datetime="2025-04-16 15:09" pubdate>
+          2025年4月16日 下午
         </time>
       </span>
     
@@ -232,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          591 字
         
       </span>
     
@@ -243,7 +241,7 @@
         
         
         
-          18 分钟
+          5 分钟
         
       </span>
     
@@ -280,113 +278,17 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">（自学笔记11）让我们重新认识一下吧，双重差分！</h1>
+            <h1 id="seo-header">（文摘4）献给阿尔吉侬的花束</h1>
             
             
               <div class="markdown-body">
                 
-                <h4 id="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。"><a href="#以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。" class="headerlink" title="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。"></a>以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。</h4><h4 id="计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。"><a href="#计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。" class="headerlink" title="计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。"></a>计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。</h4><h2 id="最基本的DID形式与概念"><a href="#最基本的DID形式与概念" class="headerlink" title="最基本的DID形式与概念"></a>最基本的DID形式与概念</h2><p>&emsp;&emsp;假设有两个城市A和B，在T=0时期，这两座城市的发展趋势没有什么差异，此时，政府将城市A设立为低碳试点城市，在T=1时期，城市A相较于城市B的环境污染情况出现了差异。去捕捉变化的方法叫作双重差分。</p>
-<p>&emsp;&emsp;双重差分依赖于准自然实验，实验的处理效应是参与实验的个体参与试验后的结果减去其如果不参与实验后的结果。即：</p>
-<script type="math/tex; mode=display">E[y_1-y_0|D=1]=E[y_1|D=1]-E[y_0|D=1]</script><p>&emsp;&emsp;而此时，反事实的结果（不参与实验的结果）现实当中是观察不到的。DID的思路就是：寻找一个合意的控制组。合成控制法的思路是：拟合一个反事实结果。</p>
-<h3 id="DID的适用条件"><a href="#DID的适用条件" class="headerlink" title="DID的适用条件"></a>DID的适用条件</h3><p>&emsp;&emsp;DID的处理效应：用实验组个体参与实验后的结果减去控制组个体不参与实验后的结果：</p>
-<script type="math/tex; mode=display">E[\Delta{y_1}|D=1]-E[\Delta{y_0}|D=0]=E[\Delta{y_1}|D=1]-E[\Delta{y_0}|D=1]+E[\Delta{y_0}|D=1]-E[\Delta{y_0}|D=0]</script><h4 id="分组随机且组间可比"><a href="#分组随机且组间可比" class="headerlink" title="分组随机且组间可比"></a>分组随机且组间可比</h4><p>&emsp;&emsp;满足平行趋势（给定分组，两组之间具有平行趋势）</p>
-<p>&emsp;&emsp;分组自选择性弱（随便如何分组，这种平行趋势都存在）</p>
-<p>&emsp;&emsp;组间异质性尽量小（平行趋势不仅仅是均值的平行）</p>
-<h4 id="分组后没有溢出效应"><a href="#分组后没有溢出效应" class="headerlink" title="分组后没有溢出效应"></a>分组后没有溢出效应</h4><p>&emsp;&emsp;例如，城市A和城市B之间，不存在着污染的跨区域流动。（这里我想到当初模仿数经上面一个DID论文，他的卖点恰好就是放松了DID溢出效应的设定，也就是将受到政策冲击组的邻近城市作为实验组，去检验DID的溢出效应。不知道这样做是否合理？）</p>
-<h4 id="DID适用性的检验"><a href="#DID适用性的检验" class="headerlink" title="DID适用性的检验"></a>DID适用性的检验</h4><p>&emsp;&emsp;对于单期DID，最直观的方式就是平行趋势的画图！画的是分组的E[Y]或者E[残差项]</p>
-<p>&emsp;&emsp;对于多期DID，其平行趋势检验应用了事件研究法，也就是将时间变量设定为虚拟变量</p>
-<p>&emsp;&emsp;安慰剂检验：构造伪政策冲击时间、或者伪实验组</p>
-<p>&emsp;&emsp;分组自选择性检验：只用实验期前的数据进行回归，理想情况下系数不显著。</p>
-<p>&emsp;&emsp;其他方法：工具变量、Heckman两步法、机器学习等。</p>
-<h2 id="DID形式的拓展"><a href="#DID形式的拓展" class="headerlink" title="DID形式的拓展"></a>DID形式的拓展</h2><p>&emsp;&emsp;广义DID（连续DID）：个体同时受政策影响，但影响程度不同。这种设定可以讨论没有控制组的情况，但是只保留了DID的形式（针对全面铺开的政策）。另外也有文章对影响程度进行了人为的划分，进而分出实验组和控制组，这种主观性较强，需要更多的稳健性检验。</p>
-<p>&emsp;&emsp;多期DID（目前大多数，也是被研究最多的DID形式）：实验组受政策影响的时间是不同的。</p>
-<p>&emsp;&emsp;PSM-DID：解决组间可比的问题（样本差异不要过大），解决分组自选择的问题，感觉目前多数作为稳健性检验去做。</p>
-<p>&emsp;&emsp;RD-DID：某些时候不能用PSM，因为出现了根据某一个X，实验组的样本参与实验的概率都是1，控制组参与实验的概率都是0的现象，也就是断点回归。</p>
-<h2 id="多期双重差分的研究进展"><a href="#多期双重差分的研究进展" class="headerlink" title="多期双重差分的研究进展"></a>多期双重差分的研究进展</h2><h4 id="这里的“多期”是指政策冲击时间的多期，也就是交叠DID，“单期”是指政策冲击时间的唯一，也就是传统的DID。"><a href="#这里的“多期”是指政策冲击时间的多期，也就是交叠DID，“单期”是指政策冲击时间的唯一，也就是传统的DID。" class="headerlink" title="这里的“多期”是指政策冲击时间的多期，也就是交叠DID，“单期”是指政策冲击时间的唯一，也就是传统的DID。"></a>这里的“多期”是指政策冲击时间的多期，也就是交叠DID，“单期”是指政策冲击时间的唯一，也就是传统的DID。</h4><h3 id="单期DID与多期DID的估计结果差异"><a href="#单期DID与多期DID的估计结果差异" class="headerlink" title="单期DID与多期DID的估计结果差异"></a>单期DID与多期DID的估计结果差异</h3><h4 id="案例和代码来自许文立老师宏观研学会公众号"><a href="#案例和代码来自许文立老师宏观研学会公众号" class="headerlink" title="案例和代码来自许文立老师宏观研学会公众号"></a>案例和代码来自许文立老师宏观研学会公众号</h4><p>对于受到相同时间政策冲击的实验组来说，可以建立这样一个简单的stata数据集。该数据集由一个控制组和两个实验组构成，并且两个实验组受到的政策冲击影响不同。</p>
-<pre><code class="hljs">`DID*********************************************** 同时处理，但处理强度不同
-clear      // 清除stata已存在的数据
-local units = 3
-local start = 1
-local end   = 20
-local time = `end&#39; - `start&#39; + 1
-local obsv = `units&#39; * `time&#39;
-set obs `obsv&#39;
-egen NU     = seq(), b(`time&#39;)  
-egen Period = seq(), f(`start&#39;) t(`end&#39;)   
-sort NU Period
-xtset NU Period    // 声明面板数据类型
-lab var NU &quot;Panel variable&quot;
-lab var Period  &quot;Time  variable&quot;
-* 假设在第5期之后，有新校区假设
-* 创建处理变量T和结果变量y
-gen T = 0
-replace T = 1 if NU&gt;=2 &amp; Period&gt;=5    //处理发生在第二和三个id，第5期，这时T=1，其它所有情况T=0
-lab var T &quot;Treated&quot;
-cap drop Y
-gen Y = 0
-replace Y = cond(T==1, 2, 0) if NU==2
-replace Y = cond(T==1, 4, 0) if NU==3
-lab var Y &quot;Outcome variable&quot;  
-twoway (connected Y Period if NU==1) (connected Y Period if NU==2) (connected Y Period if NU==3)  ,  xline(4.5) xlabel(1(1)20)     legend(order(1 &quot;NU=1&quot; 2 &quot;NU=2&quot; 3 &quot;NU=3&quot;))
-* 面板数据回归
-xtreg Y T Period,fe    
-reghdfe Y T, absorb(NU Period) `
-</code></pre><p>&emsp;&emsp;通过stata命令可以得出平均处理效应（ATT）为3，即2和3的处理效应的平均值，在最终的ATTA里，两个处理组的权重都是0.5。这是没有假如个体固定效应和时间固定效应的ATT，当假如了控制变量，如固定效应后，再观察其结果。</p>
-<pre><code class="hljs">`* 首先，舍弃上例中生成的数据，重新来生成Y的数据cap drop Y
-gen Y = 0
-replace Y = NU + Period + cond(T==1, 0, 0) if NU==1
-replace Y = NU + Period + cond(T==1, 2, 0) if NU==2
-replace Y = NU + Period + cond(T==1, 4, 0) if NU==3
-lab var Y &quot;Outcome variable&quot;
-* 可视化数据
-twoway  (connected Y Period if NU==1) (connected Y Period if NU==2)  (connected Y Period if NU==3) , xline(4.5)  xlabel(1(1)10) legend(order(1 &quot;NU=1&quot; 2 &quot;NU=2&quot; 3 &quot;NU=3&quot;))
-*此时的ATT无法直观观察到，需要通过回归计算
-reghdfe Y T, absorb(NU Period)
-*可以比较不同控制情形下的结果
-reg Y T        // 不控制任何因素
-reg Y T i.Period      // 仅仅控制时间固定效应
-reg Y T i.NU    // 仅仅控制个体固定效应
-reg Y T i.Period i.NU  // 双向固定效应(正确!)
-</code></pre><p>&emsp;&emsp;而针对多期DID（不同处理期）来说，ATT的结果又会不一样。同样利用模拟数据进行演示：</p>
-<pre><code class="hljs">`clear      // 清除stata已存在的数据
-local units = 3
-local start = 1
-local end   = 20
-local time = `end&#39; - `start&#39; + 1
-local obsv = `units&#39; * `time&#39;
-set obs `obsv&#39;
-egen NU     = seq(), b(`time&#39;)  
-egen Period = seq(), f(`start&#39;) t(`end&#39;)   
-sort NU Period
-xtset NU Period    // 声明面板数据类型
-lab var NU &quot;Panel variable&quot;
-lab var Period  &quot;Time  variable&quot;
-* 假设在第5期之后，有新校区假设
-* 创建处理变量T和结果变量y
-gen T = 0
-replace T = 1 if NU==2 &amp; Period&gt;=5   //处理发生在第二个id，第5期，这时T=1，其它所有情况T=0
-replace T = 1 if NU==3 &amp; Period&gt;=10   //处理发生在第三个id，第10期，这时T=1，其它所有情况T=0
-lab var T &quot;Treated&quot;
-cap drop Y
-gen Y = 0
-replace Y = cond(T==1, 2, 0) if NU==2
-replace Y = cond(T==1, 4, 0) if NU==3
-lab var Y &quot;Outcome variable&quot;  
-twoway (connected Y Period if NU==1) (connected Y Period if NU==2) (connected Y Period if NU==3) , xline(4.5) xlabel(1(1)20) legend(order(1 &quot;NU=1&quot; 2 &quot;NU=2&quot; 3 &quot;NU=3&quot;))
-*运行回归命令计算结果
-reghdfe Y T ,absorb(NU Period)
-*此时的ATT为3.21
-*而考虑了个体和时间趋势下，回归后的ATT为3.29
-cap drop Y
-gen Y = 0
-replace Y = NU + Period + cond(T==1, 0, 0) if NU==1
-replace Y = NU + Period + cond(T==1, 2, 0) if NU==2
-replace Y = NU + Period + cond(T==1, 4, 0) if NU==3
-lab var Y &quot;Outcome variable&quot;
-* 可视化数据
-twoway (connected Y Period if NU==1) (connected Y Period if NU==2)  (connected Y Period if NU==3)  ,  xline(4.5)  xlabel(1(1)10) legend(order(1 &quot;NU=1&quot; 2 &quot;NU=2&quot; 3 &quot;NU=3&quot;))
-reghdfe Y T ,absorb(NU Period)
-</code></pre><p>&emsp;&emsp;为什么呢？因为此刻处理时点发生了变化，个体2是在第五期受到处理，而个体3是在第十期受到处理。因此，就无法清晰区分出“处理前”和“处理后”，也不能很好区分“处理组”和“对照组”。例如在第5-10期，只有NU=2这个组群发生了变化，其他两个组群都保持不变。那么该如何理解ATTA=3.29这个估计值呢？这就是目前多期DID所探讨的问题。</p>
+                <h4 id="由于这本书的设定，前面的部分有很多错别字，导致看的时候非常别扭，但后面高登智力变正常后，读进去才感到幸好自己没有放弃读。"><a href="#由于这本书的设定，前面的部分有很多错别字，导致看的时候非常别扭，但后面高登智力变正常后，读进去才感到幸好自己没有放弃读。" class="headerlink" title="由于这本书的设定，前面的部分有很多错别字，导致看的时候非常别扭，但后面高登智力变正常后，读进去才感到幸好自己没有放弃读。"></a>由于这本书的设定，前面的部分有很多错别字，导致看的时候非常别扭，但后面高登智力变正常后，读进去才感到幸好自己没有放弃读。</h4><p>&emsp;&emsp;在我来得及抗议或问她是什么意思之前，她已经开始往内走。“晚安，查理，再次谢谢你陪我度过这美妙…美妙的时光。”然后她就把门关上。</p>
+<p>&emsp;&emsp;我对她、对我，以及这世界感到愤怒，但回到家时，我了解到她是对的。现在，我已经弄不清她是喜欢我，或只是对我仁慈。她究竟把我当作什么呢？最令人难堪的是，我以前从来没有过这种经验。人要怎么做才能学会如何对待另一个人呢？男人要如何才能学会对待女人呢？</p>
+<p>&emsp;&emsp;书籍在这方面没有太大用处。</p>
+<p>&emsp;&emsp;但是下回，我要和她吻别道晚安。</p>
+<p>&emsp;&emsp;找到我完整存在的意义，除了要掌握过去，也得知道未来的可能发展，不仅要知道自己来自何方，也得知道会去哪里。虽然我们知道，在迷宫尽头等着我们的是死亡（这并不是我一直都能了解的事……不久之前，我身上这位少年还以为死亡只会发生在别人身上），我现在认为，我在迷宫中选择的道路造就了现在的我。我不只是一件事物，也是种存在方式，众多方式中的一种，了解自己选择的道路，以及那些我没踏上的道路，都能够协助我了解自己的转变。</p>
+<p>&emsp;&emsp;“不要误解我的意思，”我说，“智慧是人类最伟大的恩赐之一，只是在追寻知识的过程中，对爱的追寻往往就被搁在一旁。这是我自己最近发现的结论。我可以把这个假设提供给你参考：没有能力给予和接受爱情的智慧，会促成心智与道德上的崩溃，形成神经官能症，甚至精神病。而且我还要说，只知专注在心智本身，以致排除人际关系并因此形成封闭的自我中心，只会导致暴力与痛苦。</p>
 
                 
               </div>
@@ -405,7 +307,7 @@ reghdfe Y T ,absorb(NU Period)
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%90%B8%E6%94%B6/" class="category-chain-item">吸收</a>
+  <a href="/categories/%E6%96%87%E6%91%98/" class="category-chain-item">文摘</a>
   
   
 
@@ -425,8 +327,8 @@ reghdfe Y T ,absorb(NU Period)
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>（自学笔记11）让我们重新认识一下吧，双重差分！</div>
-      <div>http://wynwynwyn.xyz/2025/04/15/（自学笔记11-A）让我们重新认识一下吧，双重差分！/</div>
+      <div>（文摘4）献给阿尔吉侬的花束</div>
+      <div>http://wynwynwyn.xyz/2025/04/16/（文摘4）献给阿尔吉侬的花束/</div>
     </div>
     <div class="license-meta">
       
@@ -438,7 +340,7 @@ reghdfe Y T ,absorb(NU Period)
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年4月15日</div>
+          <div>2025年4月16日</div>
         </div>
       
       
@@ -470,9 +372,9 @@ reghdfe Y T ,absorb(NU Period)
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/04/16/%EF%BC%88%E6%96%87%E6%91%983%EF%BC%89%E6%B2%A7%E6%B5%AA%E4%B9%8B%E6%B0%B4/" title="（文摘3）沧浪之水">
+                      <a href="/2025/04/16/%EF%BC%88%E6%96%87%E6%91%985%EF%BC%89%E7%97%85%E9%9A%99%E7%A2%8E%E7%AC%94/" title="（文摘5）病隙碎笔">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">（文摘3）沧浪之水</span>
+                        <span class="hidden-mobile">（文摘5）病隙碎笔</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -480,8 +382,8 @@ reghdfe Y T ,absorb(NU Period)
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/04/14/%EF%BC%88%E6%96%87%E6%91%982%EF%BC%89%E4%B9%8B%E5%89%8D%E7%9C%8B%E8%BF%87%E7%9A%84%E7%A2%8E%E7%89%87/" title="（文摘2）之前看过的碎片">
-                        <span class="hidden-mobile">（文摘2）之前看过的碎片</span>
+                      <a href="/2025/04/16/%EF%BC%88%E6%96%87%E6%91%983%EF%BC%89%E6%B2%A7%E6%B5%AA%E4%B9%8B%E6%B0%B4/" title="（文摘3）沧浪之水">
+                        <span class="hidden-mobile">（文摘3）沧浪之水</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -538,11 +440,6 @@ reghdfe Y T ,absorb(NU Period)
 
 
   
-
-
-  
-  
-
 
 
 

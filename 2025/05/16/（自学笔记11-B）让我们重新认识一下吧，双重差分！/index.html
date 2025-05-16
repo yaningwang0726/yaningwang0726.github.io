@@ -19,21 +19,21 @@
   <meta name="author" content="Wyn">
   <meta name="keywords" content="">
   
-    <meta name="description" content="在最恰当的时候我读到了这本书。&emsp;&emsp;当我想对这种神秘力量作一番描述，使它清晰起来，却又觉得非常困难。我心中被钝锯子锯着似的，想着自己也算个知识分子吧，看清了事情的真相，都只能装瞎子装聋子。我没有足够的勇气去尽那一份天然的责任，属于角色的责任。良知和责任感是知识分子在人格上的自我命名，这是很久以来在我心中回荡着的一句话，我甚至想到要把它作为人生的座右铭，它使我有了一点血性之勇。可是">
+    <meta name="description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。  计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。  合成控制DID  基本介绍   合成控制法由Abadie和Gardeazabal（2003）提出来研究西班牙巴斯克地区恐怖活动的经济成本。其基本思想为：虽然无法找到巴斯克地区的最佳控制组，但可以通">
 <meta property="og:type" content="article">
-<meta property="og:title" content="（文摘3）沧浪之水">
-<meta property="og:url" content="http://wynwynwyn.xyz/2025/04/16/%EF%BC%88%E6%96%87%E6%91%983%EF%BC%89%E6%B2%A7%E6%B5%AA%E4%B9%8B%E6%B0%B4/index.html">
+<meta property="og:title" content="（自学笔记11-B）让我们重新认识一下吧，双重差分！">
+<meta property="og:url" content="http://wynwynwyn.xyz/2025/05/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B011-B%EF%BC%89%E8%AE%A9%E6%88%91%E4%BB%AC%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B%E5%90%A7%EF%BC%8C%E5%8F%8C%E9%87%8D%E5%B7%AE%E5%88%86%EF%BC%81/index.html">
 <meta property="og:site_name" content="Wyn的窄门">
-<meta property="og:description" content="在最恰当的时候我读到了这本书。&emsp;&emsp;当我想对这种神秘力量作一番描述，使它清晰起来，却又觉得非常困难。我心中被钝锯子锯着似的，想着自己也算个知识分子吧，看清了事情的真相，都只能装瞎子装聋子。我没有足够的勇气去尽那一份天然的责任，属于角色的责任。良知和责任感是知识分子在人格上的自我命名，这是很久以来在我心中回荡着的一句话，我甚至想到要把它作为人生的座右铭，它使我有了一点血性之勇。可是">
+<meta property="og:description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。  计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。  合成控制DID  基本介绍   合成控制法由Abadie和Gardeazabal（2003）提出来研究西班牙巴斯克地区恐怖活动的经济成本。其基本思想为：虽然无法找到巴斯克地区的最佳控制组，但可以通">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-04-16T06:17:39.000Z">
-<meta property="article:modified_time" content="2025-04-16T07:08:27.285Z">
+<meta property="article:published_time" content="2025-05-16T06:21:33.000Z">
+<meta property="article:modified_time" content="2025-05-16T07:56:38.857Z">
 <meta property="article:author" content="Wyn">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>（文摘3）沧浪之水 - Wyn的窄门</title>
+  <title>（自学笔记11-B）让我们重新认识一下吧，双重差分！ - Wyn的窄门</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -44,6 +44,8 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
 
 
 
@@ -207,7 +209,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="（文摘3）沧浪之水"></span>
+            <span id="subtitle" data-typed-text="（自学笔记11-B）让我们重新认识一下吧，双重差分！"></span>
           
         </div>
 
@@ -218,8 +220,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-04-16 14:17" pubdate>
-          2025年4月16日 下午
+        <time datetime="2025-05-16 14:21" pubdate>
+          2025年5月16日 下午
         </time>
       </span>
     
@@ -230,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.5k 字
+          1.9k 字
         
       </span>
     
@@ -241,7 +243,7 @@
         
         
         
-          21 分钟
+          16 分钟
         
       </span>
     
@@ -278,18 +280,72 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">（文摘3）沧浪之水</h1>
+            <h1 id="seo-header">（自学笔记11-B）让我们重新认识一下吧，双重差分！</h1>
             
             
               <div class="markdown-body">
                 
-                <h4 id="在最恰当的时候我读到了这本书。"><a href="#在最恰当的时候我读到了这本书。" class="headerlink" title="在最恰当的时候我读到了这本书。"></a>在最恰当的时候我读到了这本书。</h4><p>&emsp;&emsp;当我想对这种神秘力量作一番描述，使它清晰起来，却又觉得非常困难。我心中被钝锯子锯着似的，想着自己也算个知识分子吧，看清了事情的真相，都只能装瞎子装聋子。我没有足够的勇气去尽那一份天然的责任，属于角色的责任。良知和责任感是知识分子在人格上的自我命名，这是很久以来在我心中回荡着的一句话，我甚至想到要把它作为人生的座右铭，它使我有了一点血性之勇。可是一旦面对现实，这句话的说服力就不那么充分了。现实毕竟是现实，它早就为人们预设了推卸的理由，只要稍稍退一步，就退到了那些理由的荫庇之下，于是心头就安妥下来。可是我又问自己，原则如果可能因个人的理由而变通，就不是原则。沉默不仅是对良知的压抑，简直就是对自尊心的挑战。我感到了内心的屈辱，自己与“猪人狗人”们实在也没有两样，以动物性的适生方式活着而已。我察觉到深心有一种难以克服的恐惧，它与那种力量一样神秘而难以描述。细想之后这是失去了身份的恐惧，我是知识分子，我不说话那还指望谁来说话？我沉默着那我又是谁？我在焦虑中犹豫了很久。犹豫之后我还是决定了放弃，这使我降低了对自己的自我评价。原来，我内心的优越感并没有充分的理由。</p>
-<p>&emsp;&emsp;首先是活着，然后是怎么活。活着的问题既然来到这个世上就不用讨论了，反正你不能去死，剩下的问题就是怎么活。怎么活？还不是去追求生活质量？我说：“时间真能改变人呢，十年前我们几个走在乡间的小路上，唱着‘蓝天佩朵夕阳在胸膛’去搞农村调查，那时候的胡一兵心中有生活质量这几个字？更不用说当作人生理想了。”这时小车音箱里正唱道：“是我改变了世界，还是世界改变了我。”胡一兵说：“改变世界？那是青年哥哥不知自己几斤几两，以为世界是可以改变特别是由自己来改变的，用虚伪的悲壮自欺欺人，真不知自己何许人也。以为世界可以按自己的设计而改变的人都是可怕的人物，狂妄分子！”我说：“于是人只剩下了一件事可做，把自己的生活质量提高提高再提高，那人还是不是人呢！”他叹口气说：“说起来其实也很可悲，自己成了器官的奴仆，每天给主人挣钱弄香的辣的，还要给他洗脸洗脚，看着他慢慢衰老最后死去，一辈子就把句号划上了。”我说：“有时候想起来人生真是一场喜剧，上亿条精虫只有你跑在前面变成了人，其余的兄弟姐妹都被冲到厕所里去了，反过来一想又是一场悲剧，精心照顾自己的器官一辈子，它还是要背叛你，一天老一天最后携你逝去。”车到江边，我们下了车，伏在栏杆上看江心船来船往，灯光闪烁。我忽然感到自己失去了倾诉的愿望，就沉默着，他也不再说什么。</p>
-<p>&emsp;&emsp;到头来我还是有了一种恐慌，时间过去了，生命在流逝，可我仍呆在原地，没有什么东西可以证明我随着时间一起前行。我每天吃了，喝了，睡了，总之，活下来了，可这活下来也就是活下来而已，没有获得超出活下来的意义。我一旦问自己，一辈子就这样下去吗？我就心里发痛，不敢再往深里想。闲着的时候那种无聊的感觉追逐着我，紧紧地追逐着我，使我不敢面对自己。有时实在无处逃避，就到大街上去走一走，故意走得很远，很累，然后回来。我想着古代的那些大人先生们肯定也有这样的感觉，所以他们要写作，要云游天下，为无根的人生找到一条根，一种活着的依据。</p>
-<p>&emsp;&emsp;这使我发现了自己的精神实际上是极其有限的，被拘禁在一个无形的空间之中，无法超越，而想象中的超越也越来越虚弱而苍白了。想得麻木了我用力地扭着头，想把这种种想法沿着某种椭圆的切线抛出去。那些从来不思索的人也这么活着，还活得好一些，这使思索的意义变的十分暧昧。思索着，这是我的骄傲，也是我的劫难。</p>
-<p>&emsp;&emsp;一种神秘的力量，瓦解性极强的力量，使一切深刻性都变得苍白，甚至滑稽。最深刻的思索也改变不了最简单的事实，因此最简单的事实有着最深刻的内涵。我意识到了自己是这个时代的堂吉诃德，比堂吉诃德还不如。党先生把滑稽当神圣是没有意识到自己失去了历史的依据，不合潮流，而我意识到了却还是不合潮流。的确，潮流不是从天上凭空流下来的，它的形成有其深刻的原因，有其必然性，也有其历史的依据，一个人不可能凭着匹夫之勇去对抗这种必然性，对抗历史。这是宿命，是那些还愿意相信和坚守一点什么的人最大的悲哀，他们甚至不能给自己找到一种依据，一种理由。</p>
-<p>&emsp;&emsp;人不是猪狗，人需要在自我生存之外去寻找活着的依据。可今天，当人们把自己的当作意义之源，他就切断了自己通向无限的可能性。觉醒的人是可悲的，他承受着残忍的悲哀，横下心剪断了对世界的任何念想，舍弃了道义人格和良知，顺从了可亲可近可悲可鄙的现世主义。我曾认为如果一个人仅仅只凭着生活经验活着，那它一定是个狭隘的人，只看见自己的人。世界上一定还有另外一种声音，从神秘的虚无之中发出的声音，这种声音无法驾驭，也无法证实无法描述，却是那样的确凿地存在。这是更高的真实。这个真实不是上帝，而是深心那种无法说明的冲动和渴望。这种声音只有少数人能够听到，并受到感召，使他有抗拒生活经验的力量。那些圣人们，就是一些抗拒者。我仍崇拜他们，但我再也不能跟着他们走下去了。对世界我无能为力，我有权利放弃，我只能如此。无能为力，无可奈何，这是我的理由，也是我的解脱，我感到了如释重负的轻松。那些猪人，还有狗人，其实是聪明的人，幸福的人啊。人这一辈子，只能面对鼻子下的那一点点东西，人其实就是这么可怜，可悲。但只有在可怜可悲之中，才可能与现实发生有效联系，才可能萌生出一点点希望的萌芽，可怜可悲的希望萌芽。我发誓要重新做人，把过去的自己杀死。决心很大，做起来可不容易。</p>
-<p>&emsp;&emsp;我们在随波逐流之中变成了新型的知识分子，没有义不容辞的使命意识，没有天下千秋的承担情怀，没有流放千古的虚妄幻想。时代给了我们足够的智慧看清事情的真相，因而我们也不再向自己虚构神圣预设终极，不再去追求那种不可能的可能性。我们是胜利的失败者，又是失败的胜利者，是儒雅的俗人，又是庸俗的雅人。我们以前辈的方式说话，但本质上却没有力量超出生存者的境界。对世界我们什么都不是，对自己就是一切，我们被这种残酷的真实击败了，从内部被击败了。我们没有力量面对那些严峻的话题，关于身份，关于灵魂，于是怯懦而虚伪地设想那些问题并不存在，生存才是唯一的真实。我们曾经拥有终极，而终极在今天已经变成了我们自己。生命的意义之源突然中断，梦想成为梦想，我们成为无缘之水无本之木，成为永远的精神流浪者。天下千秋已经渺远，自己这一辈子却如此真实。当一己之瞬间成为天下之永恒，我们就与乐观主义作了最后的诀别，毕竟，人只能在自身之外而不可能以自己为目标建构崇高，建构形而上的意义世界。悲剧在时间的巨掌中已经注定，我们还没来得及细想就进入了铺就的轨道。对我们而言，这个事实只能接受，而无须讨论也无法抗拒。</p>
+                <h4 id="以下内容并非原创主要来源于各大学术公众号-b站等仅用于本人学术记录侵删"><a class="markdownIt-Anchor" href="#以下内容并非原创主要来源于各大学术公众号-b站等仅用于本人学术记录侵删"></a> 以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。</h4>
+<h4 id="计划自学笔记11分为a和b两部分a部分简要梳理双重差分的理论和原理b部分从实证角度对did的代码和应用进行梳理"><a class="markdownIt-Anchor" href="#计划自学笔记11分为a和b两部分a部分简要梳理双重差分的理论和原理b部分从实证角度对did的代码和应用进行梳理"></a> 计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。</h4>
+<h2 id="合成控制did"><a class="markdownIt-Anchor" href="#合成控制did"></a> 合成控制DID</h2>
+<h3 id="基本介绍"><a class="markdownIt-Anchor" href="#基本介绍"></a> 基本介绍</h3>
+<p>  合成控制法由Abadie和Gardeazabal（2003）提出来研究西班牙巴斯克地区恐怖活动的经济成本。其基本思想为：虽然无法找到巴斯克地区的最佳控制组，但可以通过对其他城市进行适当的线性组合，以构造一个更为贴切的“合成控制地区”，并将真实的巴斯克地区与合成的巴斯克地区进行对比，其优势是可以根据数据来选择线性组合的最优权重，避免了研究者主观选择控制组的随意性。</p>
+<p>  而DID同样是根据处理组和控制组的差异来对政策冲击进行检验。并且，DID通常需要平行趋势检验来判断政策前处理组和控制组不存在明显的事前趋势，这有时难以保证。从这个角度来看，虽然DID和合成控制法原本适用的样本不同，但原理上合成控制法可以很好的弥补DID关于平行趋势的依赖性（或者说可以通过拟合控制组得到更可靠的结果）。合成控制法可以看作是DID的一类变种，因为他们有相同的基本设定。但合成控制的匹配是为了消除政策实施前的差异，而不是解释处理的倾向性。因此SDID结合了合成控制法和DID的优势——不太依赖平行趋势和大面板数据。</p>
+<h3 id="stata代码"><a class="markdownIt-Anchor" href="#stata代码"></a> Stata代码</h3>
+<p>`<br />
+ssc install sdid,replace /// 安装命令</p>
+<p>*基本语法结构</p>
+<p>sdid Y S T D, vce(method) seed(#) reps(#) covariates(var, [,method]) graph g1_opt(string) g2_opt(string) unstandardized<br />
+`</p>
+<p>其中，Y为结果变量，S为个体变量（id），T为时间变量（year），D为二值型处理变量（did）</p>
+<p>vce()：可选择bootstrap，jackknife和placebo标准误</p>
+<p>seed()：定义拟随机数的种子</p>
+<p>reps()：bootstrap和placebo的重复次数</p>
+<p>covariates(var, [,method]) ：用于调整Y的协变量，method是调整方法。调整方法有两种，一种是Arkhangelsky 等提出的 optimized (默认)，另一种是 Kranz (2021) 提出的 projected，后者运算速度要更快</p>
+<p>graph()：显示个体、时间权重，以及结果趋势的图</p>
+<p>unstandardized：如果包含控制变量，且使用“optimized”方法，控制变量将会在找到最优权重前标准化为z得分。如果指定这一选项，控制变量会被标准化，避免了在最优化的过程中控制变量过度分散。如果不指定这一选项，则控制变量将以原始形态进入回归当中（没理解）</p>
+<p>注：SDID只能处理平衡面板数据。</p>
+<h2 id="针对多期did异质性处理效应的stata命令"><a class="markdownIt-Anchor" href="#针对多期did异质性处理效应的stata命令"></a> 针对多期DID异质性处理效应的stata命令</h2>
+<h3 id="几种解决多期did交错did或staggered-did异质性处置效应的方案"><a class="markdownIt-Anchor" href="#几种解决多期did交错did或staggered-did异质性处置效应的方案"></a> 几种解决多期DID（交错DID或staggered DID）异质性处置效应的方案</h3>
+<p>  文献中有三类解决思路, 一是计算组别 - 时期平均处理效应并进行加权平均。其核心是避免使用已处理的个体作为 “坏的控制组”, 只选取 “好的控制组” 计算组别 - 时期平均处理效应, 再通过组别、时期两个维度进行加权平均得到平均处理效应。二是利用插补的方法插补出合理的反事实结果。其核心是从控制组样本中估计出每个处理组个体每个时期的反事实结果变量, 从而避免 “ 坏的控制组” 问题的出现。 三是利用堆叠回归的方式。其核心是给每个处理组选择 “ 好的控制组” 组成数据集, 按照相对事件时间(而不是日历时间)堆叠数据集并进行回归估计。</p>
+<p>  针对第一种思路：de Chaisemartin 和 D’Haultfœuille ( 2020a, 2022a) 、 Callaway 和 Sant’Anna  (2021)。对应stata命令为：csdid，csdid2， did_multiplegt</p>
+<p>  针对第二种思路：Borusyak 等 (2021 )。对应的stata命令为：did2s, did_imputation</p>
+<p>  针对第三种思路：Cengiz 等 (2019)。对应命令为：stackedev</p>
+<p>  以及判断处理组和从未受过政策冲击组权重的Bacon分解。对应命令为：bacondecomp</p>
+<pre><code class="hljs">&gt;参考文献：
+[1] 许文立. 双重差分法的最新理论进展与经验研究新趋势[J]. 广东社会科学, 2023(5): 51-62.
+[2] 刘冲, 沙学康, 张妍. 交错双重差分：处理效应异质性与估计方法选择[J/OL]. 数量经济技术经济研究, 2022, 39(9): 177-204.
+</code></pre>
+<p>  命令代码网上太多辣，懒得写了：）</p>
+<p>  比代码更重要的问题是：这么多命令和处理方式，应该如何选？（可以参考许文立老师公众号【应用计量系列125期】）这里直接说结论：</p>
+<p>  对于目前的两种处理方法子群体DID（Subgroup Difference-in-Differences，SGDD），也就是前文的第一种思路；以及回归插补法（Regression Imputation，RI），也就是前文的第二种思路而言，① 如果结果变量的误差展现出较低的序列相关（例如，临时性冲击），RI估计量更好；② 如果结果误差有较高的序列相关（例如，恒久性冲击），估计短期（瞬时）处理效应，或者同时处理，SGDID估计量更好；</p>
+<h2 id="局部投影法didlp-did"><a class="markdownIt-Anchor" href="#局部投影法didlp-did"></a> 局部投影法DID（LP-DID）</h2>
+<blockquote>
+<p>参考：<br />
+[1] 许文立. 双重差分法的最新理论进展与经验研究新趋势[J]. 广东社会科学, 2023(5): 51-62.<br />
+[2] <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Oimhaxc4ZHCMkDjhIwH2_w">https://mp.weixin.qq.com/s/Oimhaxc4ZHCMkDjhIwH2_w</a></p>
+</blockquote>
+<p>  Arindrajit Dube、 Daniele Girardi 、O` scar Jorda 、 Alan M. Taylor(2022)从一个新的视角——宏观时间序列脉冲响应和微观动态因果效应的互动，利用局部投影（Local Projection）法来来重塑DID事件研究的估计。</p>
+<h3 id="该方法的优势"><a class="markdownIt-Anchor" href="#该方法的优势"></a> 该方法的优势</h3>
+<p>  1.易于编程和计算，且对于处理组和控制组来说非常透明、灵活；</p>
+<p>  2.该方法适用于一般环境，例如，控制处理前结果和其他协变量，且可以应对处理内生性问题；</p>
+<p>  3.可作为其他稳健估计量的一般化。</p>
+<p>  模拟数据表明，与其它稳健估计量相比，LP-DID估计量在交叠处理情形下也非常稳健。例如，处理时间外生时，LP-DID与SA（2021）、CS（2021）估计量差不多，但是计算更简单和快速；如果处理是内生的（依赖于前期的结果变量），LP-DID匹配处理前结果的能力比其它稳健估计量更好。</p>
+<h3 id="stata命令"><a class="markdownIt-Anchor" href="#stata命令"></a> stata命令</h3>
+<p>`ssc install lpdid,replace ///安装</p>
+<p>*在使用前还需要安装 bootstrap、reghdfe和egenmore三个命令</p>
+<p>*命令格式：</p>
+<p>lpdid depvar , unit(varname) time(varname) treat(varname) pre_window(integer) post_window(integer) controls() absorb() cluster() level(95)<br />
+`<br />
+depvar：结果变量</p>
+<p>unit：个体变量</p>
+<p>time：时间变量</p>
+<p>absorb：固定效应，他是默认固定time，所以放id就行</p>
+<p>treat：处理变量did,不是sort</p>
+<p>pre：处理前期数，正整数，必须大于等于2</p>
+<p>post：处理后期数，正整数，必须大于等于0</p>
+<p>比较有意思的，这个命令options里加了很多可选的条件，比如never，表示只用从没受过冲击的控制组当控制组（排除先后处理的问题）。</p>
+<h3 id="还欠一个did的敏感性测试没写后面有机会补上"><a class="markdownIt-Anchor" href="#还欠一个did的敏感性测试没写后面有机会补上"></a> 还欠一个did的敏感性测试没写，后面有机会补上。</h3>
 
                 
               </div>
@@ -308,7 +364,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%96%87%E6%91%98/" class="category-chain-item">文摘</a>
+  <a href="/categories/%E5%90%B8%E6%94%B6/" class="category-chain-item">吸收</a>
   
   
 
@@ -328,8 +384,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>（文摘3）沧浪之水</div>
-      <div>http://wynwynwyn.xyz/2025/04/16/（文摘3）沧浪之水/</div>
+      <div>（自学笔记11-B）让我们重新认识一下吧，双重差分！</div>
+      <div>http://wynwynwyn.xyz/2025/05/16/（自学笔记11-B）让我们重新认识一下吧，双重差分！/</div>
     </div>
     <div class="license-meta">
       
@@ -341,7 +397,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年4月16日</div>
+          <div>2025年5月16日</div>
         </div>
       
       
@@ -373,18 +429,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/04/16/%EF%BC%88%E6%96%87%E6%91%984%EF%BC%89%E7%8C%AE%E7%BB%99%E9%98%BF%E5%B0%94%E5%90%89%E4%BE%AC%E7%9A%84%E8%8A%B1%E6%9D%9F/" title="（文摘4）献给阿尔吉侬的花束">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">（文摘4）献给阿尔吉侬的花束</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/04/15/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B011-A%EF%BC%89%E8%AE%A9%E6%88%91%E4%BB%AC%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B%E5%90%A7%EF%BC%8C%E5%8F%8C%E9%87%8D%E5%B7%AE%E5%88%86%EF%BC%81/" title="（自学笔记11-A）让我们重新认识一下吧，双重差分！">
-                        <span class="hidden-mobile">（自学笔记11-A）让我们重新认识一下吧，双重差分！</span>
+                      <a href="/2025/05/02/AI%E6%97%B6%E4%BB%A3%E6%9B%B4%E9%9C%80%E8%A6%81%E7%B2%BE%E8%AF%BB%E8%AE%BA%E6%96%87%EF%BC%88%E7%AC%AC1%E7%AF%87%EF%BC%89/" title="AI时代更需要精读论文（第1篇）">
+                        <span class="hidden-mobile">AI时代更需要精读论文（第1篇）</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -441,6 +491,11 @@
 
 
   
+
+
+  
+  
+
 
 
 

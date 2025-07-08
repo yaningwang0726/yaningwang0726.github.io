@@ -19,12 +19,12 @@
   <meta name="author" content="Wyn">
   <meta name="keywords" content="">
   
-    <meta name="description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。  计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。  合成控制DID  基本介绍   合成控制法由Abadie和Gardeazabal（2003）提出来研究西班牙巴斯克地区恐怖活动的经济成本。其基本思想为：虽然无法找到巴斯克地区的最佳控制组，但可以通">
+    <meta name="description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。合成控制DID基本介绍&emsp;&emsp;合成控制法由Abadie和Gardeazabal（2003）提出来研究西班牙巴斯克地区恐怖活动的经济成本。其基本思想为：虽然无法找到巴斯克地区的最佳控制组，但可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="（自学笔记11-B）让我们重新认识一下吧，双重差分！">
 <meta property="og:url" content="http://wynwynwyn.xyz/2025/05/16/%EF%BC%88%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B011-B%EF%BC%89%E8%AE%A9%E6%88%91%E4%BB%AC%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B%E5%90%A7%EF%BC%8C%E5%8F%8C%E9%87%8D%E5%B7%AE%E5%88%86%EF%BC%81/index.html">
 <meta property="og:site_name" content="Wyn的窄门">
-<meta property="og:description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。  计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。  合成控制DID  基本介绍   合成控制法由Abadie和Gardeazabal（2003）提出来研究西班牙巴斯克地区恐怖活动的经济成本。其基本思想为：虽然无法找到巴斯克地区的最佳控制组，但可以通">
+<meta property="og:description" content="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。合成控制DID基本介绍&emsp;&emsp;合成控制法由Abadie和Gardeazabal（2003）提出来研究西班牙巴斯克地区恐怖活动的经济成本。其基本思想为：虽然无法找到巴斯克地区的最佳控制组，但可">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-05-16T06:21:33.000Z">
 <meta property="article:modified_time" content="2025-05-16T07:57:57.210Z">
@@ -285,18 +285,11 @@
             
               <div class="markdown-body">
                 
-                <h4 id="以下内容并非原创主要来源于各大学术公众号-b站等仅用于本人学术记录侵删"><a class="markdownIt-Anchor" href="#以下内容并非原创主要来源于各大学术公众号-b站等仅用于本人学术记录侵删"></a> 以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。</h4>
-<h4 id="计划自学笔记11分为a和b两部分a部分简要梳理双重差分的理论和原理b部分从实证角度对did的代码和应用进行梳理"><a class="markdownIt-Anchor" href="#计划自学笔记11分为a和b两部分a部分简要梳理双重差分的理论和原理b部分从实证角度对did的代码和应用进行梳理"></a> 计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。</h4>
-<h2 id="合成控制did"><a class="markdownIt-Anchor" href="#合成控制did"></a> 合成控制DID</h2>
-<h3 id="基本介绍"><a class="markdownIt-Anchor" href="#基本介绍"></a> 基本介绍</h3>
-<p>  合成控制法由Abadie和Gardeazabal（2003）提出来研究西班牙巴斯克地区恐怖活动的经济成本。其基本思想为：虽然无法找到巴斯克地区的最佳控制组，但可以通过对其他城市进行适当的线性组合，以构造一个更为贴切的“合成控制地区”，并将真实的巴斯克地区与合成的巴斯克地区进行对比，其优势是可以根据数据来选择线性组合的最优权重，避免了研究者主观选择控制组的随意性。</p>
-<p>  而DID同样是根据处理组和控制组的差异来对政策冲击进行检验。并且，DID通常需要平行趋势检验来判断政策前处理组和控制组不存在明显的事前趋势，这有时难以保证。从这个角度来看，虽然DID和合成控制法原本适用的样本不同，但原理上合成控制法可以很好的弥补DID关于平行趋势的依赖性（或者说可以通过拟合控制组得到更可靠的结果）。合成控制法可以看作是DID的一类变种，因为他们有相同的基本设定。但合成控制的匹配是为了消除政策实施前的差异，而不是解释处理的倾向性。因此SDID结合了合成控制法和DID的优势——不太依赖平行趋势和大面板数据。</p>
-<h3 id="stata代码"><a class="markdownIt-Anchor" href="#stata代码"></a> Stata代码</h3>
-<p>`<br />
-ssc install sdid,replace /// 安装命令</p>
+                <h4 id="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。"><a href="#以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。" class="headerlink" title="以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。"></a>以下内容并非原创，主要来源于各大学术公众号、b站等，仅用于本人学术记录，侵删。</h4><h4 id="计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。"><a href="#计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。" class="headerlink" title="计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。"></a>计划自学笔记11分为A和B两部分，A部分简要梳理双重差分的理论和原理，B部分从实证角度对DID的代码和应用进行梳理。</h4><h2 id="合成控制DID"><a href="#合成控制DID" class="headerlink" title="合成控制DID"></a>合成控制DID</h2><h3 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h3><p>&emsp;&emsp;合成控制法由Abadie和Gardeazabal（2003）提出来研究西班牙巴斯克地区恐怖活动的经济成本。其基本思想为：虽然无法找到巴斯克地区的最佳控制组，但可以通过对其他城市进行适当的线性组合，以构造一个更为贴切的“合成控制地区”，并将真实的巴斯克地区与合成的巴斯克地区进行对比，其优势是可以根据数据来选择线性组合的最优权重，避免了研究者主观选择控制组的随意性。</p>
+<p>&emsp;&emsp;而DID同样是根据处理组和控制组的差异来对政策冲击进行检验。并且，DID通常需要平行趋势检验来判断政策前处理组和控制组不存在明显的事前趋势，这有时难以保证。从这个角度来看，虽然DID和合成控制法原本适用的样本不同，但原理上合成控制法可以很好的弥补DID关于平行趋势的依赖性（或者说可以通过拟合控制组得到更可靠的结果）。合成控制法可以看作是DID的一类变种，因为他们有相同的基本设定。但合成控制的匹配是为了消除政策实施前的差异，而不是解释处理的倾向性。因此SDID结合了合成控制法和DID的优势——不太依赖平行趋势和大面板数据。</p>
+<h3 id="Stata代码"><a href="#Stata代码" class="headerlink" title="Stata代码"></a>Stata代码</h3><p>`<br>ssc install sdid,replace /// 安装命令</p>
 <p>*基本语法结构</p>
-<p>sdid Y S T D, vce(method) seed(#) reps(#) covariates(var, [,method]) graph g1_opt(string) g2_opt(string) unstandardized<br />
-`</p>
+<p>sdid Y S T D, vce(method) seed(#) reps(#) covariates(var, [,method]) graph g1_opt(string) g2_opt(string) unstandardized<br>`</p>
 <p>其中，Y为结果变量，S为个体变量（id），T为时间变量（year），D为二值型处理变量（did）</p>
 <p>vce()：可选择bootstrap，jackknife和placebo标准误</p>
 <p>seed()：定义拟随机数的种子</p>
@@ -305,39 +298,29 @@ ssc install sdid,replace /// 安装命令</p>
 <p>graph()：显示个体、时间权重，以及结果趋势的图</p>
 <p>unstandardized：如果包含控制变量，且使用“optimized”方法，控制变量将会在找到最优权重前标准化为z得分。如果指定这一选项，控制变量会被标准化，避免了在最优化的过程中控制变量过度分散。如果不指定这一选项，则控制变量将以原始形态进入回归当中（没理解）</p>
 <p>注：SDID只能处理平衡面板数据。</p>
-<h2 id="针对多期did异质性处理效应的stata命令"><a class="markdownIt-Anchor" href="#针对多期did异质性处理效应的stata命令"></a> 针对多期DID异质性处理效应的stata命令</h2>
-<h3 id="几种解决多期did交错did或staggered-did异质性处置效应的方案"><a class="markdownIt-Anchor" href="#几种解决多期did交错did或staggered-did异质性处置效应的方案"></a> 几种解决多期DID（交错DID或staggered DID）异质性处置效应的方案</h3>
-<p>  文献中有三类解决思路, 一是计算组别 - 时期平均处理效应并进行加权平均。其核心是避免使用已处理的个体作为 “坏的控制组”, 只选取 “好的控制组” 计算组别 - 时期平均处理效应, 再通过组别、时期两个维度进行加权平均得到平均处理效应。二是利用插补的方法插补出合理的反事实结果。其核心是从控制组样本中估计出每个处理组个体每个时期的反事实结果变量, 从而避免 “ 坏的控制组” 问题的出现。 三是利用堆叠回归的方式。其核心是给每个处理组选择 “ 好的控制组” 组成数据集, 按照相对事件时间(而不是日历时间)堆叠数据集并进行回归估计。</p>
-<p>  针对第一种思路：de Chaisemartin 和 D’Haultfœuille ( 2020a, 2022a) 、 Callaway 和 Sant’Anna  (2021)。对应stata命令为：csdid，csdid2， did_multiplegt</p>
-<p>  针对第二种思路：Borusyak 等 (2021 )。对应的stata命令为：did2s, did_imputation</p>
-<p>  针对第三种思路：Cengiz 等 (2019)。对应命令为：stackedev</p>
-<p>  以及判断处理组和从未受过政策冲击组权重的Bacon分解。对应命令为：bacondecomp</p>
+<h2 id="针对多期DID异质性处理效应的stata命令"><a href="#针对多期DID异质性处理效应的stata命令" class="headerlink" title="针对多期DID异质性处理效应的stata命令"></a>针对多期DID异质性处理效应的stata命令</h2><h3 id="几种解决多期DID（交错DID或staggered-DID）异质性处置效应的方案"><a href="#几种解决多期DID（交错DID或staggered-DID）异质性处置效应的方案" class="headerlink" title="几种解决多期DID（交错DID或staggered DID）异质性处置效应的方案"></a>几种解决多期DID（交错DID或staggered DID）异质性处置效应的方案</h3><p>&emsp;&emsp;文献中有三类解决思路, 一是计算组别 - 时期平均处理效应并进行加权平均。其核心是避免使用已处理的个体作为 “坏的控制组”, 只选取 “好的控制组” 计算组别 - 时期平均处理效应, 再通过组别、时期两个维度进行加权平均得到平均处理效应。二是利用插补的方法插补出合理的反事实结果。其核心是从控制组样本中估计出每个处理组个体每个时期的反事实结果变量, 从而避免 “ 坏的控制组” 问题的出现。 三是利用堆叠回归的方式。其核心是给每个处理组选择 “ 好的控制组” 组成数据集, 按照相对事件时间(而不是日历时间)堆叠数据集并进行回归估计。</p>
+<p>&emsp;&emsp;针对第一种思路：de Chaisemartin 和 D’Haultfœuille ( 2020a, 2022a) 、 Callaway 和 Sant’Anna  (2021)。对应stata命令为：csdid，csdid2， did_multiplegt </p>
+<p>&emsp;&emsp;针对第二种思路：Borusyak 等 (2021 )。对应的stata命令为：did2s, did_imputation</p>
+<p>&emsp;&emsp;针对第三种思路：Cengiz 等 (2019)。对应命令为：stackedev</p>
+<p>&emsp;&emsp;以及判断处理组和从未受过政策冲击组权重的Bacon分解。对应命令为：bacondecomp</p>
 <pre><code class="hljs">&gt;参考文献：
 [1] 许文立. 双重差分法的最新理论进展与经验研究新趋势[J]. 广东社会科学, 2023(5): 51-62.
 [2] 刘冲, 沙学康, 张妍. 交错双重差分：处理效应异质性与估计方法选择[J/OL]. 数量经济技术经济研究, 2022, 39(9): 177-204.
-</code></pre>
-<p>  命令代码网上太多辣，懒得写了：）</p>
-<p>  比代码更重要的问题是：这么多命令和处理方式，应该如何选？（可以参考许文立老师公众号【应用计量系列125期】）这里直接说结论：</p>
-<p>  对于目前的两种处理方法子群体DID（Subgroup Difference-in-Differences，SGDD），也就是前文的第一种思路；以及回归插补法（Regression Imputation，RI），也就是前文的第二种思路而言，① 如果结果变量的误差展现出较低的序列相关（例如，临时性冲击），RI估计量更好；② 如果结果误差有较高的序列相关（例如，恒久性冲击），估计短期（瞬时）处理效应，或者同时处理，SGDID估计量更好；</p>
-<h2 id="局部投影法didlp-did"><a class="markdownIt-Anchor" href="#局部投影法didlp-did"></a> 局部投影法DID（LP-DID）</h2>
-<blockquote>
-<p>参考：<br />
-[1] 许文立. 双重差分法的最新理论进展与经验研究新趋势[J]. 广东社会科学, 2023(5): 51-62.<br />
-[2] <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Oimhaxc4ZHCMkDjhIwH2_w">https://mp.weixin.qq.com/s/Oimhaxc4ZHCMkDjhIwH2_w</a></p>
+</code></pre><p>&emsp;&emsp;命令代码网上太多辣，懒得写了：）</p>
+<p>&emsp;&emsp;比代码更重要的问题是：这么多命令和处理方式，应该如何选？（可以参考许文立老师公众号【应用计量系列125期】）这里直接说结论：</p>
+<p>&emsp;&emsp;对于目前的两种处理方法子群体DID（Subgroup Difference-in-Differences，SGDD），也就是前文的第一种思路；以及回归插补法（Regression Imputation，RI），也就是前文的第二种思路而言，① 如果结果变量的误差展现出较低的序列相关（例如，临时性冲击），RI估计量更好；② 如果结果误差有较高的序列相关（例如，恒久性冲击），估计短期（瞬时）处理效应，或者同时处理，SGDID估计量更好；</p>
+<h2 id="局部投影法DID（LP-DID）"><a href="#局部投影法DID（LP-DID）" class="headerlink" title="局部投影法DID（LP-DID）"></a>局部投影法DID（LP-DID）</h2><blockquote>
+<p>参考：<br>    [1] 许文立. 双重差分法的最新理论进展与经验研究新趋势[J]. 广东社会科学, 2023(5): 51-62.<br>    [2] <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Oimhaxc4ZHCMkDjhIwH2_w">https://mp.weixin.qq.com/s/Oimhaxc4ZHCMkDjhIwH2_w</a></p>
 </blockquote>
-<p>  Arindrajit Dube、 Daniele Girardi 、O` scar Jorda 、 Alan M. Taylor(2022)从一个新的视角——宏观时间序列脉冲响应和微观动态因果效应的互动，利用局部投影（Local Projection）法来来重塑DID事件研究的估计。</p>
-<h3 id="该方法的优势"><a class="markdownIt-Anchor" href="#该方法的优势"></a> 该方法的优势</h3>
-<p>  1.易于编程和计算，且对于处理组和控制组来说非常透明、灵活；</p>
-<p>  2.该方法适用于一般环境，例如，控制处理前结果和其他协变量，且可以应对处理内生性问题；</p>
-<p>  3.可作为其他稳健估计量的一般化。</p>
-<p>  模拟数据表明，与其它稳健估计量相比，LP-DID估计量在交叠处理情形下也非常稳健。例如，处理时间外生时，LP-DID与SA（2021）、CS（2021）估计量差不多，但是计算更简单和快速；如果处理是内生的（依赖于前期的结果变量），LP-DID匹配处理前结果的能力比其它稳健估计量更好。</p>
-<h3 id="stata命令"><a class="markdownIt-Anchor" href="#stata命令"></a> stata命令</h3>
-<p>`ssc install lpdid,replace ///安装</p>
+<p>&emsp;&emsp;Arindrajit Dube、 Daniele Girardi 、O` scar Jorda 、 Alan M. Taylor(2022)从一个新的视角——宏观时间序列脉冲响应和微观动态因果效应的互动，利用局部投影（Local Projection）法来来重塑DID事件研究的估计。</p>
+<h3 id="该方法的优势"><a href="#该方法的优势" class="headerlink" title="该方法的优势"></a>该方法的优势</h3><p>&emsp;&emsp;1.易于编程和计算，且对于处理组和控制组来说非常透明、灵活；</p>
+<p>&emsp;&emsp;2.该方法适用于一般环境，例如，控制处理前结果和其他协变量，且可以应对处理内生性问题；</p>
+<p>&emsp;&emsp;3.可作为其他稳健估计量的一般化。</p>
+<p>&emsp;&emsp;模拟数据表明，与其它稳健估计量相比，LP-DID估计量在交叠处理情形下也非常稳健。例如，处理时间外生时，LP-DID与SA（2021）、CS（2021）估计量差不多，但是计算更简单和快速；如果处理是内生的（依赖于前期的结果变量），LP-DID匹配处理前结果的能力比其它稳健估计量更好。</p>
+<h3 id="stata命令"><a href="#stata命令" class="headerlink" title="stata命令"></a>stata命令</h3><p>`ssc install lpdid,replace ///安装</p>
 <p>*在使用前还需要安装 bootstrap、reghdfe和egenmore三个命令</p>
 <p>*命令格式：</p>
-<p>lpdid depvar , unit(varname) time(varname) treat(varname) pre_window(integer) post_window(integer) controls() absorb() cluster() level(95)<br />
-`<br />
-depvar：结果变量</p>
+<p>lpdid depvar , unit(varname) time(varname) treat(varname) pre_window(integer) post_window(integer) controls() absorb() cluster() level(95)<br>`<br>depvar：结果变量</p>
 <p>unit：个体变量</p>
 <p>time：时间变量</p>
 <p>absorb：固定效应，他是默认固定time，所以放id就行</p>
@@ -345,8 +328,7 @@ depvar：结果变量</p>
 <p>pre：处理前期数，正整数，必须大于等于2</p>
 <p>post：处理后期数，正整数，必须大于等于0</p>
 <p>比较有意思的，这个命令options里加了很多可选的条件，比如never，表示只用从没受过冲击的控制组当控制组（排除先后处理的问题）。</p>
-<h3 id="还欠一个did的敏感性测试没写后面有机会补上"><a class="markdownIt-Anchor" href="#还欠一个did的敏感性测试没写后面有机会补上"></a> 还欠一个did的敏感性测试没写，后面有机会补上。</h3>
-
+<h3 id="还欠一个did的敏感性测试没写，后面有机会补上。"><a href="#还欠一个did的敏感性测试没写，后面有机会补上。" class="headerlink" title="还欠一个did的敏感性测试没写，后面有机会补上。"></a>还欠一个did的敏感性测试没写，后面有机会补上。</h3>
                 
               </div>
             
